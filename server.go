@@ -3,12 +3,14 @@ package main
 import (
 	"flag"
 	"fmt"
+	"html/template"
 	"os"
+	"path/filepath"
 	"runtime"
 
+	"github.com/sjsafranek/blogengine/plugins/blogengine"
 	"github.com/sjsafranek/lemur"
 	"github.com/sjsafranek/logger"
-	"github.com/sjsafranek/blogengine/plugins/blogengine"
 )
 
 const (
@@ -47,8 +49,15 @@ func main() {
 	server, _ := lemur.NewServer()
 	server.AttachFileServer("/static/", "static")
 
-
-	blog := &blogengine.BlogEngine{}
+	directory, _ := filepath.Abs("content")
+	// template, _ := filepath.Abs("tmpl/page.html")
+	tmpl := template.Must(template.ParseFiles("tmpl/page.html"))
+	blog := &blogengine.BlogEngine{
+		Directory:    directory,
+		BasePath:     "/blog",
+		Template:     tmpl,
+		TemplateName: "post",
+	}
 	server.AttachHandler("/blog", blog)
 
 	server.ListenAndServe(HTTP_PORT)

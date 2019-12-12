@@ -11,9 +11,7 @@ import (
 	"net/http"
 
 	"github.com/BurntSushi/toml"
-	// "github.com/russross/blackfriday/v2"
 	"gopkg.in/russross/blackfriday.v2"
-
 	"github.com/sjsafranek/logger"
 )
 
@@ -61,14 +59,36 @@ func Parse(fname string) (post Post, err error) {
 	return
 }
 
-
-
-
 type BlogEngine struct {
 	Directory string
 	BasePath string
+	Template *template.Template
+	TemplateName string
 }
 
 func (self *BlogEngine) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	logger.Debug(r.URL.Path)
+
+	parts := strings.Split(r.URL.Path, self.BasePath)
+	page := parts[1]
+	if "/" == page {
+		page = "/index"
+	}
+
+	pagePath := filepath.Join(self.Directory, page)
+	pagePath = fmt.Sprintf("%v.md", pagePath)
+
+	post, err := Parse(pagePath)
+	if nil != err {
+		logger.Error(err)
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	err = self.Template.ExecuteTemplate(w, self.TemplateName, post)
+	if nil != err {
+		logger.Error(err)
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
 }

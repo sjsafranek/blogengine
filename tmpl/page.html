@@ -1,0 +1,34 @@
+{{define "post"}}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    </head>
+    <body>
+
+        {{ if .Title }}
+        <section class="bg-white w-90">
+            <main class="bg-white w-100 cf helvetica dark-gray bg-white pa3 pa4-ns mw8 center">
+                <div class="fl w-100 outline mb4">
+                    <div class="pa4 ">
+                        <h1 class="f2 fw7 mt0 pv3-l bb-l bb--black">#{{.Number}}</h1>
+                        <p class="lh-copy mt2 mt3-m mt5-l f6">
+                            <span class="db-ns f4-ns f5 fw7 lh-solid mb3">{{.QuoteAuthor}} once said:</span>
+                            <span class="fw9 f2-ns f3 db lh-title mb3 mb4-l">“{{.QuoteContent}}”</span>
+                            <span class="db-l measure-wide f5">
+                                {{.Description}}
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                {{.ContentHTML}}
+            </main>
+        </section>
+        {{ end }}
+
+    </body>
+
+</html>
+
+{{end}}
