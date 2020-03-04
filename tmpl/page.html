@@ -5,7 +5,9 @@
 
     <head>
     </head>
+
     <body>
+
 
         {{ if .Title }}
         <section class="bg-white w-90">
@@ -13,11 +15,14 @@
                 <div class="fl w-100 outline mb4">
                     <div class="pa4 ">
                         <h1 class="f2 fw7 mt0 pv3-l bb-l bb--black">#{{.Number}}</h1>
-                        <p class="lh-copy mt2 mt3-m mt5-l f6">
-                            <span class="db-ns f4-ns f5 fw7 lh-solid mb3">{{.QuoteAuthor}} once said:</span>
-                            <span class="fw9 f2-ns f3 db lh-title mb3 mb4-l">“{{.QuoteContent}}”</span>
+                        <p class="lh-copy mt2 mt3-m mt5-l f6">>
                             <span class="db-l measure-wide f5">
                                 {{.Description}}
+                            </span>
+                        </p>
+                        <p>
+                            <span class="db-l measure-wide f5">
+                                {{.Tags}}
                             </span>
                         </p>
                     </div>
@@ -26,6 +31,35 @@
             </main>
         </section>
         {{ end }}
+
+
+        {{ if .Posts }}
+           <section class="cf w-90 pa2 sans-serif">
+               <header class="bg-gold pa2 sans-serif">
+                   <div class="mw9 center pa4 pt3-ns ph7-l">
+                       <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
+                           <span class="bg-black-90 lh-copy white pa1 tracked-tight">
+                               Blog
+                           </span>
+                       </h3>
+                   </div>
+               </header>
+               {{ range .Posts }}
+               <article class="fl w-100 w-50-m  w-25-ns pa2">
+                   <div class="aspect-ratio aspect-ratio--1x1">
+                       <a href="/blog/{{.Slug}}" class="dim">
+                           <img style="background-image:url({{.Image}});" class="db bg-center cover aspect-ratio--object" />
+                       </a>
+                   </div>
+                   <a href="/blog/{{.Slug}}" class="ph2 ph0-ns pb3 link db dim">
+                       <h3 class="f5 f4-ns mb0 black-90">#{{.Number}} {{.Title}}</h3>
+                       <h3 class="f6 f5 fw4 mt2 black-60">{{.Date.Format "January 2, 2006" }}</h3>
+                   </a>
+               </article>
+               {{ end }}
+           </section>
+        {{ end }}
+
 
     </body>
 

@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/sjsafranek/blogengine/plugins/blogengine"
+	"github.com/sjsafranek/blogengine/lib/blogengine"
 	"github.com/sjsafranek/lemur"
 	"github.com/sjsafranek/logger"
 )
@@ -23,8 +23,8 @@ var (
 
 const (
 	MAJOR_VERSION int    = 0
-	MINOR_VERSION int    = 0
-	PATCH_VERSION int    = 1
+	MINOR_VERSION int    = 1
+	PATCH_VERSION int    = 0
 	PROJECT_NAME  string = "Server"
 )
 
@@ -50,7 +50,6 @@ func main() {
 	server.AttachFileServer("/static/", "static")
 
 	directory, _ := filepath.Abs("content")
-	// template, _ := filepath.Abs("tmpl/page.html")
 	tmpl := template.Must(template.ParseFiles("tmpl/page.html"))
 	blog := &blogengine.BlogEngine{
 		Directory:    directory,
