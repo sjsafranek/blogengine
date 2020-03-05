@@ -53,9 +53,22 @@ type Post struct {
 // 	return err
 // }
 
+type BlogEngine struct {
+	Directory    string
+	BasePath     string
+	Template     *template.Template
+	TemplateName string
+}
+
+func (self *BlogEngine) getSlug(fpath string) string {
+	return strings.TrimSuffix(strings.Replace(fpath, self.Directory, self.BasePath, -1), ".md")
+}
+
 // Parse will parse a blog file
-func Parse(fname string) (*Post, error) {
+func (self *BlogEngine) Parse(fname string) (*Post, error) {
 	var post Post
+
+	post.Title = strings.TrimSuffix(filepath.Base(fname), ".md")
 
 	// check if file or directory
 	fileInfo, err := os.Stat(fname)
@@ -67,10 +80,7 @@ func Parse(fname string) (*Post, error) {
 
 	// handle directory
     case mode.IsDir():
-		_, fname = filepath.Split(fname)
-		post.Title = strings.TrimSuffix(fname, ".md")
-		post.Slug = post.Title + "/"
-		// post.IsDirectory = true
+		post.Slug = self.getSlug(fname) + "/"
 		return &post, err
 
 	// handle file post
@@ -93,40 +103,34 @@ func Parse(fname string) (*Post, error) {
 		output := blackfriday.Run(bytes.TrimSpace(frontMatter[1]))
 		post.ContentMarkdown = string(frontMatter[1])
 		post.ContentHTML = template.HTML(string(output))
-		_, fname = filepath.Split(fname)
-		post.Slug = strings.TrimSuffix(fname, ".md")
+		post.Slug = self.getSlug(fname)
 		return &post, err
     }
-
 
 	return &post, nil
 }
 
 // GetAll returns all posts within a directory
-func GetAll(directory string) ([]*Post, error) {
+func (self *BlogEngine) GetAll(directory string) ([]*Post, error) {
 	var err error
 	fnames, _ := ioutil.ReadDir(directory)
 	posts := make([]*Post, len(fnames))
 	for i, fname := range fnames {
-		posts[i], err = Parse(path.Join(directory, fname.Name()))
+		posts[i], err = self.Parse(path.Join(directory, fname.Name()))
 		if err != nil {
 			posts = posts[:i]
 			return posts, err
 		}
 	}
+
 	// sort by date
 	sort.Slice(posts, func(i, j int) bool {
 		return posts[i].Date.Before(posts[j].Date)
 	})
+
 	return posts, err
 }
 
-type BlogEngine struct {
-	Directory    string
-	BasePath     string
-	Template     *template.Template
-	TemplateName string
-}
 
 // ServeHTTP http request handler
 func (self *BlogEngine) ServeHTTP(w http.ResponseWriter, r *http.Request) {
@@ -137,7 +141,7 @@ func (self *BlogEngine) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	// check for root url
 	if !strings.Contains(r.URL.String(), fmt.Sprintf("%v/", self.BasePath)) {
 
-		posts, err := GetAll(self.Directory)
+		posts, err := self.GetAll(self.Directory)
 		post = &Post{Posts: posts}
 		if nil != err {
 			logger.Error(err)
@@ -157,7 +161,7 @@ func (self *BlogEngine) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 		if "/" == page[len(page)-1:] {
 			// build post from directory
-			posts, err := GetAll(pagePath)
+			posts, err := self.GetAll(pagePath)
 			post = &Post{Posts: posts}
 			if nil != err {
 				logger.Error(err)
@@ -167,7 +171,7 @@ func (self *BlogEngine) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		} else {
 			// build post from file
 			filePath := fmt.Sprintf("%v.md", pagePath)
-			post, err = Parse(filePath)
+			post, err = self.Parse(filePath)
 			if nil != err {
 				logger.Error(err)
 				http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -175,7 +179,7 @@ func (self *BlogEngine) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			}
 
 			// get posts in same directory
-			post.Posts, err = GetAll(filepath.Dir(filePath))
+			post.Posts, err = self.GetAll(filepath.Dir(filePath))
 			if nil != err {
 				logger.Error(err)
 				http.Error(w, err.Error(), http.StatusInternalServerError)
