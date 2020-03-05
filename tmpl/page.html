@@ -4,62 +4,81 @@
 <html lang="en">
 
     <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <!-- Page title -->
+        <title>{{ .Title }}</title>
+
+        <style>
+            body {
+                margin-top: 12px;
+            }
+        </style>
+
     </head>
 
     <body>
 
+        <div class="container">
 
-        {{ if .Title }}
-        <section class="bg-white w-90">
-            <main class="bg-white w-100 cf helvetica dark-gray bg-white pa3 pa4-ns mw8 center">
-                <div class="fl w-100 outline mb4">
-                    <div class="pa4 ">
-                        <h1 class="f2 fw7 mt0 pv3-l bb-l bb--black">#{{.Number}}</h1>
-                        <p class="lh-copy mt2 mt3-m mt5-l f6">>
-                            <span class="db-l measure-wide f5">
-                                {{.Description}}
-                            </span>
-                        </p>
-                        <p>
-                            <span class="db-l measure-wide f5">
-                                {{.Tags}}
-                            </span>
-                        </p>
+            {{ if .Title }}
+                <div class="row">
+                    <main class="bg-white w-100 cf helvetica dark-gray bg-white pa3 pa4-ns mw8 center">
+                        <div class="fl w-100 outline mb4">
+                            <div class="pa4 ">
+                                <p class="lh-copy mt2 mt3-m mt5-l f6">>
+                                    <span class="db-l measure-wide f5">
+                                        {{.Description}}
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="db-l measure-wide f5">
+                                        {{.Tags}}
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        {{.ContentHTML}}
+                    </main>
+                </div>
+            {{ end }}
+
+            {{ if .Posts }}
+                <div class="row">
+                    <div class="card-columns">
+                        {{ range .Posts }}
+                            <!-- <div class="col-lg-2 col-md-3 col-6"> -->
+                                <div class="card mb-3" style="width: 18rem;">
+                                    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                                      <!-- <img style="background-image:url({{.Image}});" class="db bg-center cover aspect-ratio--object" /> -->
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{.Title}}</h5>
+                                        <!-- <h6 class="card-subtitle mb-2 text-muted">{{.Date}}</h6> -->
+                                        <p class="card-text">{{.Description}}</p>
+                                        <a href="/blog/{{.Slug}}" class="card-link">Open</a>
+                                    </div>
+                                    <div class="card-footer">
+                                      <small class="text-muted">{{.Date}}</small>
+                                    </div>
+                                </div>
+                            <!-- </div> -->
+                        {{ end }}
                     </div>
                 </div>
-                {{.ContentHTML}}
-            </main>
-        </section>
-        {{ end }}
+            {{ end }}
 
-
-        {{ if .Posts }}
-           <section class="cf w-90 pa2 sans-serif">
-               <header class="bg-gold pa2 sans-serif">
-                   <div class="mw9 center pa4 pt3-ns ph7-l">
-                       <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
-                           <span class="bg-black-90 lh-copy white pa1 tracked-tight">
-                               Blog
-                           </span>
-                       </h3>
-                   </div>
-               </header>
-               {{ range .Posts }}
-               <article class="fl w-100 w-50-m  w-25-ns pa2">
-                   <div class="aspect-ratio aspect-ratio--1x1">
-                       <a href="/blog/{{.Slug}}" class="dim">
-                           <img style="background-image:url({{.Image}});" class="db bg-center cover aspect-ratio--object" />
-                       </a>
-                   </div>
-                   <a href="/blog/{{.Slug}}" class="ph2 ph0-ns pb3 link db dim">
-                       <h3 class="f5 f4-ns mb0 black-90">#{{.Number}} {{.Title}}</h3>
-                       <h3 class="f6 f5 fw4 mt2 black-60">{{.Date.Format "January 2, 2006" }}</h3>
-                   </a>
-               </article>
-               {{ end }}
-           </section>
-        {{ end }}
-
+        </div>
 
     </body>
 

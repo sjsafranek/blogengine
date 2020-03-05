@@ -11,7 +11,7 @@ import (
 	"time"
 	"path"
 	"sort"
-	// "os"
+	"os"
 
 	"github.com/BurntSushi/toml"
 	"github.com/sjsafranek/logger"
@@ -33,7 +33,6 @@ type PostMetaData struct {
 	Date         time.Time `toml:"Date"`
 	Description  string    `toml:"Description"`
 	Image        string    `toml:"Image"`
-	Number       int64     `toml:"Number"`
 	Author  string    `toml:"Author"`
 	Tags         []string  `toml:"Tags"`
 }
@@ -42,6 +41,7 @@ type Post struct {
 	PostData
 	PostMetaData
 	Posts []*Post
+	// IsDirectory bool
 }
 
 // func (self *Post) Write(w io.Writer) error {
@@ -57,28 +57,49 @@ type Post struct {
 func Parse(fname string) (*Post, error) {
 	var post Post
 
-	b, err := ioutil.ReadFile(fname)
-	if err != nil {
+	// check if file or directory
+	fileInfo, err := os.Stat(fname)
+    if err != nil {
 		return &post, err
-	}
+    }
 
-	frontMatter := bytes.Split(b, []byte("---"))
-	if len(frontMatter) != 2 {
-		err = fmt.Errorf("incorrect frontmatter for %s", fname)
+	switch mode := fileInfo.Mode(); {
+
+	// handle directory
+    case mode.IsDir():
+		_, fname = filepath.Split(fname)
+		post.Title = strings.TrimSuffix(fname, ".md")
+		post.Slug = post.Title + "/"
+		// post.IsDirectory = true
 		return &post, err
-	}
 
-	err = toml.Unmarshal(frontMatter[0], &post)
-	if err != nil {
+	// handle file post
+    case mode.IsRegular():
+		b, err := ioutil.ReadFile(fname)
+		if err != nil {
+			return &post, err
+		}
+
+		frontMatter := bytes.Split(b, []byte("---"))
+		if len(frontMatter) != 2 {
+			err = fmt.Errorf("incorrect frontmatter for %s", fname)
+			return &post, err
+		}
+
+		err = toml.Unmarshal(frontMatter[0], &post)
+		if err != nil {
+			return &post, err
+		}
+		output := blackfriday.Run(bytes.TrimSpace(frontMatter[1]))
+		post.ContentMarkdown = string(frontMatter[1])
+		post.ContentHTML = template.HTML(string(output))
+		_, fname = filepath.Split(fname)
+		post.Slug = strings.TrimSuffix(fname, ".md")
 		return &post, err
-	}
-	output := blackfriday.Run(bytes.TrimSpace(frontMatter[1]))
-	post.ContentMarkdown = string(frontMatter[1])
-	post.ContentHTML = template.HTML(string(output))
-	_, fname = filepath.Split(fname)
-	post.Slug = strings.TrimSuffix(fname, ".md")
+    }
 
-	return &post, err
+
+	return &post, nil
 }
 
 // GetAll returns all posts within a directory
@@ -126,12 +147,12 @@ func (self *BlogEngine) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	} else {
 
+		// get post/page path
 		parts := strings.Split(r.URL.Path, self.BasePath)
 		page := parts[1]
 		if "/" == page {
 			page = "/index"
 		}
-
 		pagePath := filepath.Join(self.Directory, page)
 
 		if "/" == page[len(page)-1:] {
@@ -147,6 +168,14 @@ func (self *BlogEngine) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			// build post from file
 			filePath := fmt.Sprintf("%v.md", pagePath)
 			post, err = Parse(filePath)
+			if nil != err {
+				logger.Error(err)
+				http.Error(w, err.Error(), http.StatusInternalServerError)
+				return
+			}
+
+			// get posts in same directory
+			post.Posts, err = GetAll(filepath.Dir(filePath))
 			if nil != err {
 				logger.Error(err)
 				http.Error(w, err.Error(), http.StatusInternalServerError)
