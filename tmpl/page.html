@@ -4,6 +4,10 @@
 <html lang="en">
 
     <head>
+
+        <!-- Page title -->
+        <title>{{ .Title }}</title>
+
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,18 +21,28 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-
         <!-- FontAwesome -->
         <!-- <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css"> -->
 
-
-        <!-- Page title -->
-        <title>{{ .Title }}</title>
-
         <style>
+
+            html {
+                position: relative;
+                min-height: 100%;
+            }
 
             body {
                 margin-top: 12px;
+                margin-bottom: 60px; /* Margin bottom by footer height */
+            }
+
+            .footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 60px; /* Set the fixed height of the footer here */
+                line-height: 60px; /* Vertically center the text there */
+                background-color: #f5f5f5;
             }
 
             .carousel-item:hover {
@@ -43,69 +57,23 @@
 
         <div class="container">
 
-            {{ if .Title }}
-                <div class="row">
-                    <main class="bg-white w-100 cf helvetica dark-gray bg-white pa3 pa4-ns mw8 center">
-                        <div class="fl w-100 outline mb4">
-                            <div class="pa4 ">
-                                <p class="lh-copy mt2 mt3-m mt5-l f6">>
-                                    <span class="db-l measure-wide f5">
-                                        {{.Description}}
-                                    </span>
-                                </p>
-                                <p>
-                                    <span class="db-l measure-wide f5">
-                                        {{.Tags}}
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
-                        {{.ContentHTML}}
-                    </main>
-                </div>
-            {{ end }}
-
             {{ if .Posts }}
                 <div class="row">
-
                     <div id="postCarousel" class="carousel slide" data-ride="carousel" style="width: 100%;">
                         <div class="carousel-inner">
-
-                    <!-- <div class="card-columns"> -->
                         {{ range .Posts }}
-                            <div class="carousel-item" data-interval="2000" href="{{.Slug}}">
-
-                                <!-- <div class="card mb-3" style="width: 18rem;"> -->
-                                    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                                      <!-- <img style="background-image:url({{.Image}});" class="db bg-center cover aspect-ratio--object" /> -->
-                                    <!-- <div class="card-body">
-                                        <h5 class="card-title">{{.Title}}</h5>
-                                        <p class="card-text">{{.Description}}</p>
-                                        <a href="/blog/{{.Slug}}" class="card-link">Open</a>
-                                    </div>
-                                    <div class="card-footer">
-                                      <small class="text-muted">{{.Date}}</small>
-                                    </div> -->
-                                <!-- </div> -->
-
+                            <div class="carousel-item" data-interval="8000" href="{{.Slug}}">
                                 <svg width="100%">
                                     <rect width="100%" height="100%" fill="#777"></rect>
                                 </svg>
-
                                 <!-- <img src="..." class="d-block w-100" alt="..."> -->
                                 <div class="carousel-caption d-none d-md-block">
-                                    <!-- <a href="/blog/{{.Slug}}"> -->
                                     <h5>{{.Title}}</h5>
-                                    <!-- </a> -->
                                     <p>{{.Description}}</p>
                                 </div>
-
-
                             </div>
                         {{ end }}
-                    <!-- </div> -->
                         </div>
-
                         <a class="carousel-control-prev" href="#postCarousel" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
@@ -116,15 +84,33 @@
                             <span class="sr-only">Next</span>
                             <i class="fas fa-chevron-right"></i>
                         </a>
-
                     </div>
+                </div>
+            {{ end }}
 
-
-
+            {{ if .Title }}
+                <div class="row">
+                    <div class="media">
+                        {{ if .Image }}
+                        <img src="{{.Image}}" class="mr-3" alt="" style="max-width: 300px;">
+                        {{ end }}
+                        <div class="media-body">
+                            <h5 class="mt-0">{{.Title }}</h5>
+                            {{.ContentHTML}}
+                        </div>
+                    </div>
                 </div>
             {{ end }}
 
         </div>
+
+        <footer class="footer">
+            <div class="container">
+                <small>
+                    <span class="text-muted text-center">Wiki Blog.</span>
+                </small>
+            </div>
+        </footer>
 
 
         <script>
