@@ -4,15 +4,15 @@ import (
 	"flag"
 	"fmt"
 	"html/template"
+	"net/http"
 	"os"
 	"path/filepath"
-	"net/http"
 	"runtime"
 
+	"github.com/schollz/httpfileserver"
 	"github.com/sjsafranek/blogengine/lib/blogengine"
 	"github.com/sjsafranek/lemur"
 	"github.com/sjsafranek/logger"
-		"github.com/schollz/httpfileserver"
 )
 
 const (
@@ -20,8 +20,8 @@ const (
 )
 
 var (
-	HTTP_PORT int = DEFAULT_HTTP_PORT
-	DEBUG bool = false
+	HTTP_PORT int  = DEFAULT_HTTP_PORT
+	DEBUG     bool = false
 )
 
 const (

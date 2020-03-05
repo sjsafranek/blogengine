@@ -31,10 +31,9 @@
                 min-height: 100%;
             }
 
-            /*body {
-                margin-top: 12px;
+            body {
                 margin-bottom: 60px; /* Margin bottom by footer height */
-            }*/
+            }
 
             .footer {
                 position: absolute;
@@ -135,15 +134,15 @@
                 });
 
                 // enable event listeners
-                $('.carousel-control-prev')
-                    .on('mousemove', function(e){
-                        $elem.carousel('prev');
-                    });
-
-                $('.carousel-control-next')
-                    .on('mousemove', function(e){
-                        $elem.carousel('next');
-                    });
+                // $('.carousel-control-prev')
+                //     .on('mousemove', function(e){
+                //         $elem.carousel('prev');
+                //     });
+                //
+                // $('.carousel-control-next')
+                //     .on('mousemove', function(e){
+                //         $elem.carousel('next');
+                //     });
 
                 $('.carousel-item').on('click', function(e) {
                     window.location.href = $(e.target).closest('.carousel-item').attr('href');

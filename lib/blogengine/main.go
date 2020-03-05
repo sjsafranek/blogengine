@@ -6,12 +6,12 @@ import (
 	"html/template"
 	"io/ioutil"
 	"net/http"
+	"os"
+	"path"
 	"path/filepath"
+	"sort"
 	"strings"
 	"time"
-	"path"
-	"sort"
-	"os"
 
 	"github.com/BurntSushi/toml"
 	"github.com/sjsafranek/logger"
@@ -29,12 +29,12 @@ type PostData struct {
 // PostMetaData contains the metadata found in the
 // header of the markdown file.
 type PostMetaData struct {
-	Title        string    `toml:"Title"`
-	Date         time.Time `toml:"Date"`
-	Description  string    `toml:"Description"`
-	Image        string    `toml:"Image"`
-	Author  string    `toml:"Author"`
-	Tags         []string  `toml:"Tags"`
+	Title       string    `toml:"Title"`
+	Date        time.Time `toml:"Date"`
+	Description string    `toml:"Description"`
+	Image       string    `toml:"Image"`
+	Author      string    `toml:"Author"`
+	Tags        []string  `toml:"Tags"`
 }
 
 type Post struct {
@@ -72,19 +72,19 @@ func (self *BlogEngine) Parse(fname string) (*Post, error) {
 
 	// check if file or directory
 	fileInfo, err := os.Stat(fname)
-    if err != nil {
+	if err != nil {
 		return &post, err
-    }
+	}
 
 	switch mode := fileInfo.Mode(); {
 
 	// handle directory
-    case mode.IsDir():
+	case mode.IsDir():
 		post.Slug = self.getSlug(fname) + "/"
 		return &post, err
 
-	// handle file post
-    case mode.IsRegular():
+		// handle file post
+	case mode.IsRegular():
 		b, err := ioutil.ReadFile(fname)
 		if err != nil {
 			return &post, err
@@ -105,7 +105,7 @@ func (self *BlogEngine) Parse(fname string) (*Post, error) {
 		post.ContentHTML = template.HTML(string(output))
 		post.Slug = self.getSlug(fname)
 		return &post, err
-    }
+	}
 
 	return &post, nil
 }
@@ -130,7 +130,6 @@ func (self *BlogEngine) GetAll(directory string) ([]*Post, error) {
 
 	return posts, err
 }
-
 
 // ServeHTTP http request handler
 func (self *BlogEngine) ServeHTTP(w http.ResponseWriter, r *http.Request) {
