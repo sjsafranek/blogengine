@@ -6,11 +6,13 @@ import (
 	"html/template"
 	"os"
 	"path/filepath"
+	"net/http"
 	"runtime"
 
 	"github.com/sjsafranek/blogengine/lib/blogengine"
 	"github.com/sjsafranek/lemur"
 	"github.com/sjsafranek/logger"
+		"github.com/schollz/httpfileserver"
 )
 
 const (
@@ -19,6 +21,7 @@ const (
 
 var (
 	HTTP_PORT int = DEFAULT_HTTP_PORT
+	DEBUG bool = false
 )
 
 const (
@@ -32,6 +35,7 @@ var PROJECT_FULL_NAME string = fmt.Sprintf("%v-%v.%v.%v", PROJECT_NAME, MAJOR_VE
 
 func init() {
 	flag.IntVar(&HTTP_PORT, "p", DEFAULT_HTTP_PORT, "http server port")
+	flag.BoolVar(&DEBUG, "d", false, "Debug mode")
 	flag.Parse()
 }
 
@@ -58,6 +62,13 @@ func main() {
 		TemplateName: "post",
 	}
 	server.AttachHandler("/blog", blog)
+
+	// static files
+	if DEBUG {
+		server.AttachHandler("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
+	} else {
+		server.AttachHandler("/static/", httpfileserver.New("/static/", "static"))
+	}
 
 	server.ListenAndServe(HTTP_PORT)
 }

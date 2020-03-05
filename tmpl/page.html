@@ -31,10 +31,10 @@
                 min-height: 100%;
             }
 
-            body {
+            /*body {
                 margin-top: 12px;
                 margin-bottom: 60px; /* Margin bottom by footer height */
-            }
+            }*/
 
             .footer {
                 position: absolute;
@@ -49,13 +49,24 @@
                 cursor: pointer;
             }
 
+            .navbar {
+                top: 0px;
+            }
+
         </style>
 
     </head>
 
     <body>
 
-        <div class="container">
+        <!-- Just an image -->
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="/static/images/d20-icon.svg" width="30" height="30" alt="">
+            </a>
+        </nav>
+
+        <div class="container pt-2">
 
             {{ if .Posts }}
                 <div class="row">
@@ -89,7 +100,7 @@
             {{ end }}
 
             {{ if .Title }}
-                <div class="row">
+                <div class="row pt-4">
                     <div class="media">
                         {{ if .Image }}
                         <img src="{{.Image}}" class="mr-3" alt="" style="max-width: 300px;">
