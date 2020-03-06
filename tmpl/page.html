@@ -78,6 +78,14 @@
                 position: fixed;
             }*/
 
+            a.anchor {
+                /*display: block;
+                position: relative;
+                top: -50px;
+                visibility: hidden;*/
+                padding-top: 50px;
+            }
+
         </style>
 
     </head>
@@ -187,7 +195,10 @@
             // build sidebar achors
             $('.media-body h1, .media-body h2, .media-body h3, .media-body h4, .media-body h5, .media-body h6').each(function(i, elem) {
                 var $elem = $(elem);
-                $elem.attr('id', 'ss'+i);
+                // $elem.attr('id', 'ss'+i);
+                $elem.append(
+                    $('<a>',{id: 'ss'+i}).addClass('anchor')
+                );
                 $('#menu').append(
                     $('<li>').addClass('nav-item')
                         .append(
