@@ -93,6 +93,7 @@ UI.prototype._enableCarousel = function() {
     });
 }
 
+
 const App = function() {
     this.ui = new UI();
 }

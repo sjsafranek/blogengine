@@ -73,10 +73,7 @@ func main() {
 			} else {
 				tmpl = template.Must(template.ParseFiles("tmpl/page.html", "tmpl/header.html", "tmpl/footer.html"))
 			}
-
-			logger.Info(tmpl.Name,  tmpl.Name(), tmpl)
-
-			err := tmpl.ExecuteTemplate(w, "post", post)
+			err := tmpl.ExecuteTemplate(w, "page", post)
 			if nil != err {
 				logger.Error(err)
 				http.Error(w, err.Error(), http.StatusInternalServerError)
