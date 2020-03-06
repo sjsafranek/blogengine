@@ -45,7 +45,7 @@
                 background-color: #f5f5f5;
             }
 
-            .carousel-item:hover {
+            .post-link {
                 cursor: pointer;
             }
 
@@ -74,16 +74,17 @@
                 display: none;
             }
 
-            /*#sidebar {
-                position: fixed;
-            }*/
-
             a.anchor {
                 /*display: block;
                 position: relative;
                 top: -50px;
                 visibility: hidden;*/
                 padding-top: 50px;
+            }
+
+            .carousel-inner > .carousel-item {
+                height: 150px;
+                /*height: 125px;*/
             }
 
         </style>
@@ -111,13 +112,19 @@
 
             {{ if .Posts }}
                 <div class="row">
+                {{ if .Title }}
+                    <!-- add posts to carousel -->
                     <div id="postCarousel" class="carousel slide" data-ride="carousel" style="width: 100%;">
                         <div class="carousel-inner">
                         {{ range .Posts }}
-                            <div class="carousel-item" data-interval="8000" href="{{.Slug}}">
-                                <svg width="100%">
-                                    <rect width="100%" height="100%" fill="#777"></rect>
-                                </svg>
+                            <div class="carousel-item post-link" data-interval="8000" href="{{.Slug}}">
+                                {{ if .Image }}
+                                    <img class="d-block w-100" src="{{ .Image }}" alt="{{ .Title }}">
+                                {{else}}
+                                    <svg width="100%">
+                                        <rect width="100%" height="100%" fill="#777"></rect>
+                                    </svg>
+                                {{ end }}
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>{{.Title}}</h5>
                                     <p>{{.Description}}</p>
@@ -134,11 +141,32 @@
                             <i class="fas fa-chevron-right"></i>
                         </a>
                     </div>
+                {{ end }}
+                {{ if not .Title }}
+                    <!-- tile posts using cards -->
+                    <div class="card-columns">
+                        {{ range .Posts }}
+                            <div class="card post-link"  href="{{.Slug}}">
+                                {{ if .Image }}
+                                    <img class="card-img-top" src="{{ .Image }}" alt="{{ .Title }}">
+                                {{ end }}
+                                <div class="card-body">
+                                    <h5 class="card-title">{{.Title}}</h5>
+                                    <p class="card-text">{{.Description}}</p>
+                                </div>
+                            </div>
+                        {{ end }}
+                    </div>
+                {{ end }}
                 </div>
             {{ end }}
 
+
             {{ if .Title }}
-                <!-- https://www.codeply.com/go/PYSH1maRVO/bootstrap-4-nav-sticky-sidebar-scrollspy -->
+                <!--
+                    Scroll Spy:
+                        https://www.codeply.com/go/PYSH1maRVO/bootstrap-4-nav-sticky-sidebar-scrollspy
+                -->
                 <div class="container position-relative" id="content">
                     <div class="row h-100 pt-4">
 
@@ -238,8 +266,8 @@
                     'interval': 5000
                 });
 
-                $('.carousel-item').on('click', function(e) {
-                    window.location.href = $(e.target).closest('.carousel-item').attr('href');
+                $('.post-link').on('click', function(e) {
+                    window.location.href = $(e.target).closest('.post-link').attr('href');
                 });
 
 
