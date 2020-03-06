@@ -110,96 +110,92 @@
 
         <div class="container pt-2">
 
-            {{ if .Posts }}
-                <div class="row">
-                {{ if .Title }}
-                    <!-- add posts to carousel -->
-                    <div id="postCarousel" class="carousel slide" data-ride="carousel" style="width: 100%;">
-                        <div class="carousel-inner">
-                        {{ range .Posts }}
-                            <div class="carousel-item post-link" data-interval="8000" href="{{.Slug}}">
-                                {{ if .Image }}
-                                    <img class="d-block w-100" src="{{ .Image }}" alt="{{ .Title }}">
-                                {{else}}
-                                    <svg width="100%">
-                                        <rect width="100%" height="100%" fill="#777"></rect>
-                                    </svg>
-                                {{ end }}
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>{{.Title}}</h5>
-                                    <p>{{.Description}}</p>
-                                </div>
+        {{ if .Posts }}
+            <div class="row">
+            {{ if .Title }}
+                <!-- add posts to carousel -->
+                <div id="postCarousel" class="carousel slide" data-ride="carousel" style="width: 100%;">
+                    <div class="carousel-inner">
+                    {{ range .Posts }}
+                        <div class="carousel-item post-link" data-interval="8000" href="{{.Slug}}">
+                            {{ if .Image }}
+                                <img class="d-block w-100" src="{{ .Image }}" alt="{{ .Title }}">
+                            {{else}}
+                                <svg width="100%">
+                                    <rect width="100%" height="100%" fill="#777"></rect>
+                                </svg>
+                            {{ end }}
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>{{.Title}}</h5>
+                                <p>{{.Description}}</p>
                             </div>
-                        {{ end }}
                         </div>
-                        <a class="carousel-control-prev" href="#postCarousel" role="button" data-slide="prev">
-                            <span class="sr-only">Previous</span>
-                            <i class="fas fa-chevron-left"></i>
-                        </a>
-                        <a class="carousel-control-next" href="#postCarousel" role="button" data-slide="next">
-                            <span class="sr-only">Next</span>
-                            <i class="fas fa-chevron-right"></i>
-                        </a>
+                    {{ end }}
                     </div>
-                {{ end }}
-                {{ if not .Title }}
-                    <!-- tile posts using cards -->
-                    <div class="card-columns">
-                        {{ range .Posts }}
-                            <div class="card post-link"  href="{{.Slug}}">
-                                {{ if .Image }}
-                                    <img class="card-img-top" src="{{ .Image }}" alt="{{ .Title }}">
-                                {{ end }}
-                                <div class="card-body">
-                                    <h5 class="card-title">{{.Title}}</h5>
-                                    <p class="card-text">{{.Description}}</p>
-                                </div>
-                            </div>
-                        {{ end }}
-                    </div>
-                {{ end }}
+                    <a class="carousel-control-prev" href="#postCarousel" role="button" data-slide="prev">
+                        <span class="sr-only">Previous</span>
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#postCarousel" role="button" data-slide="next">
+                        <span class="sr-only">Next</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
                 </div>
             {{ end }}
-
-
-            {{ if .Title }}
-                <!--
-                    Scroll Spy:
-                        https://www.codeply.com/go/PYSH1maRVO/bootstrap-4-nav-sticky-sidebar-scrollspy
-                -->
-                <div class="container position-relative" id="content">
-                    <div class="row h-100 pt-4">
-
-                        <!-- sidebar -->
-                        <div class="col-sm-3 col-xs-1" id="sidebar">
-                            <div class="pt-5 mb-3 sticky-top" id="sidebar">
-                                <ul class="nav nav-pills flex-column" id="menu">
-                                </ul>
+            {{ if not .Title }}
+                <!-- tile posts using cards -->
+                <div class="card-columns">
+                    {{ range .Posts }}
+                        <div class="card post-link"  href="{{.Slug}}">
+                            {{ if .Image }}
+                                <img class="card-img-top" src="{{ .Image }}" alt="{{ .Title }}">
+                            {{ end }}
+                            <div class="card-body">
+                                <h5 class="card-title">{{.Title}}</h5>
+                                <p class="card-text">{{.Description}}</p>
                             </div>
                         </div>
-                        <!-- /sidebar -->
+                    {{ end }}
+                </div>
+            {{ end }}
+            </div>
+        {{ end }}
 
-                        <!-- main -->
-                        <div class="col-sm-9 col-xs-11 py-5" id="main">
-                            <div class="row position-relative">
-                                <div class="col">
-                                    <div class="media" data-spy="scroll" data-target="#menu" data-offset="0">
-                                        {{ if .Image }}
-                                        <img src="{{.Image}}" class="mr-3" alt="" style="max-width: 300px;">
-                                        {{ end }}
-                                        <div class="media-body">
-                                            <h1 class="mt-0">{{.Title }}</h1>
-                                            {{.ContentHTML}}
-                                        </div>
+        {{ if .Title }}
+            <!--
+                Scroll Spy:
+                    https://www.codeply.com/go/PYSH1maRVO/bootstrap-4-nav-sticky-sidebar-scrollspy
+            -->
+            <div class="container position-relative" id="content">
+                <div class="row h-100 pt-4">
+                    <!-- sidebar -->
+                    <div class="col-sm-3 col-xs-1" id="sidebar">
+                        <div class="pt-5 mb-3 sticky-top" id="sidebar">
+                            <ul class="nav nav-pills flex-column" id="menu">
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /sidebar -->
+                    <!-- main -->
+                    <div class="col-sm-9 col-xs-11 py-5" id="main">
+                        <div class="row position-relative">
+                            <div class="col">
+                                <div class="media" data-spy="scroll" data-target="#menu" data-offset="0">
+                                    {{ if .Image }}
+                                    <img src="{{.Image}}" class="mr-3" alt="" style="max-width: 300px;">
+                                    {{ end }}
+                                    <div class="media-body">
+                                        <h1 class="mt-0">{{.Title }}</h1>
+                                        {{.ContentHTML}}
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- /main -->
-
                     </div>
+                    <!-- /main -->
                 </div>
-            {{ end }}
+            </div>
+        {{ end }}
 
         </div>
 
@@ -220,10 +216,10 @@
         <script>
 
 
-            // build sidebar achors
+            // Build sidebar achors
+            // Enable scrollspy
             $('.media-body h1, .media-body h2, .media-body h3, .media-body h4, .media-body h5, .media-body h6').each(function(i, elem) {
                 var $elem = $(elem);
-                // $elem.attr('id', 'ss'+i);
                 $elem.append(
                     $('<a>',{id: 'ss'+i}).addClass('anchor')
                 );
