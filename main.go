@@ -27,8 +27,8 @@ var (
 const (
 	MAJOR_VERSION int    = 0
 	MINOR_VERSION int    = 1
-	PATCH_VERSION int    = 0
-	PROJECT_NAME  string = "Server"
+	PATCH_VERSION int    = 3
+	PROJECT_NAME  string = "Wiki Blog Server"
 )
 
 var PROJECT_FULL_NAME string = fmt.Sprintf("%v-%v.%v.%v", PROJECT_NAME, MAJOR_VERSION, MINOR_VERSION, PATCH_VERSION)
@@ -54,15 +54,36 @@ func main() {
 	server.AttachFileServer("/static/", "static")
 
 	directory, _ := filepath.Abs("content")
-	tmpl := template.Must(template.ParseFiles("tmpl/page.html"))
+
+	var postTmpl *template.Template
+	if !DEBUG {
+		postTmpl = template.Must(template.ParseFiles("tmpl/page.html", "tmpl/header.html", "tmpl/footer.html"))
+	}
+
 	blog := &blogengine.BlogEngine{
 		Directory:    directory,
 		BasePath:     "/blog",
-		Template:     tmpl,
-		TemplateName: "post",
-		GetTemplate: func() *template.Template {
-			return template.Must(template.ParseFiles("tmpl/page.html"))
+		// Template:     tmpl,
+		// TemplateName: "post",
+
+		Handler: func(w http.ResponseWriter, post *blogengine.Post) {
+			var tmpl *template.Template
+			if nil != postTmpl {
+				tmpl = postTmpl
+			} else {
+				tmpl = template.Must(template.ParseFiles("tmpl/page.html", "tmpl/header.html", "tmpl/footer.html"))
+			}
+
+			logger.Info(tmpl.Name,  tmpl.Name(), tmpl)
+
+			err := tmpl.ExecuteTemplate(w, "post", post)
+			if nil != err {
+				logger.Error(err)
+				http.Error(w, err.Error(), http.StatusInternalServerError)
+				return
+			}
 		},
+
 	}
 	server.AttachHandler("/blog", blog)
 

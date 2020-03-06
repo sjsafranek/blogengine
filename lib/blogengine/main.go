@@ -56,9 +56,10 @@ type Post struct {
 type BlogEngine struct {
 	Directory    string
 	BasePath     string
-	Template     *template.Template
-	TemplateName string
-	GetTemplate func()  *template.Template
+	// Template     *template.Template
+	// TemplateName string
+	// GetTemplate func()  *template.Template
+	Handler func(http.ResponseWriter, *Post)
 }
 
 func (self *BlogEngine) getSlug(fpath string) string {
@@ -189,12 +190,14 @@ func (self *BlogEngine) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	}
 
-	// render in template
-	err = self.Template.ExecuteTemplate(w, self.TemplateName, post)
-	if nil != err {
-		logger.Error(err)
-		http.Error(w, err.Error(), http.StatusInternalServerError)
-		return
-	}
+	self.Handler(w, post)
+
+	// // render in template
+	// err = self.Template.ExecuteTemplate(w, self.TemplateName, post)
+	// if nil != err {
+	// 	logger.Error(err)
+	// 	http.Error(w, err.Error(), http.StatusInternalServerError)
+	// 	return
+	// }
 
 }
