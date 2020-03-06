@@ -194,8 +194,8 @@
                             $('<a>', {href: '#ss'+i}).addClass('nav-link').append($elem.text())
                         )
                 );
-                // $('body').scrollspy({ target: '#menu' });
             });
+            $('body').scrollspy({ target: '#menu' });
             $('[data-spy="scroll"]').each(function () {
                 $(this).scrollspy('refresh');
             });
