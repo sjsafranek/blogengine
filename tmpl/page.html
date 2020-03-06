@@ -29,8 +29,9 @@
             /* CSS used here will be applied after bootstrap.css */
             html,body {
                 position: relative;
-            	height:100%;
-                padding-top:50px;
+            	height: 100%;
+                padding-top: 50px;
+                scroll-behavior: smooth;
             }
 
             body {
@@ -53,7 +54,6 @@
                 -moz-transition:padding 0.2s ease;
                 -o-transition:padding 0.2s ease;
                 transition:padding 0.2s ease;
-
                 transition: box-shadow 0.2s ease;
             }
 
@@ -64,7 +64,6 @@
                 -moz-transition:padding 0.2s linear;
                 -o-transition:padding 0.2s linear;
                 transition:padding 0.2s linear;
-
                 box-shadow: 0 2px 6px -2px rgba(0,0,0,0.6);
             }
 
@@ -74,6 +73,10 @@
                 right: 25px;
                 display: none;
             }
+
+            /*#sidebar {
+                position: fixed;
+            }*/
 
         </style>
 
@@ -107,7 +110,6 @@
                                 <svg width="100%">
                                     <rect width="100%" height="100%" fill="#777"></rect>
                                 </svg>
-                                <!-- <img src="..." class="d-block w-100" alt="..."> -->
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>{{.Title}}</h5>
                                     <p>{{.Description}}</p>
@@ -116,12 +118,10 @@
                         {{ end }}
                         </div>
                         <a class="carousel-control-prev" href="#postCarousel" role="button" data-slide="prev">
-                            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
                             <span class="sr-only">Previous</span>
                             <i class="fas fa-chevron-left"></i>
                         </a>
                         <a class="carousel-control-next" href="#postCarousel" role="button" data-slide="next">
-                            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
                             <span class="sr-only">Next</span>
                             <i class="fas fa-chevron-right"></i>
                         </a>
@@ -130,15 +130,37 @@
             {{ end }}
 
             {{ if .Title }}
-                <div class="row pt-4">
-                    <div class="media">
-                        {{ if .Image }}
-                        <img src="{{.Image}}" class="mr-3" alt="" style="max-width: 300px;">
-                        {{ end }}
-                        <div class="media-body">
-                            <h1 class="mt-0">{{.Title }}</h1>
-                            {{.ContentHTML}}
+                <!-- https://www.codeply.com/go/PYSH1maRVO/bootstrap-4-nav-sticky-sidebar-scrollspy -->
+                <div class="container position-relative" id="content">
+                    <div class="row h-100 pt-4">
+
+                        <!-- sidebar -->
+                        <div class="col-sm-3 col-xs-1" id="sidebar">
+                            <div class="pt-5 mt-5 mb-3 sticky-top" id="sidebar">
+                                <ul class="nav nav-pills flex-column" id="menu">
+                                </ul>
+                            </div>
                         </div>
+                        <!-- /sidebar -->
+
+                        <!-- main -->
+                        <div class="col-sm-9 col-xs-11 py-5" id="main">
+                            <div class="row position-relative">
+                                <div class="col">
+                                    <div class="media" data-spy="scroll" data-target="#menu" data-offset="0">
+                                        {{ if .Image }}
+                                        <img src="{{.Image}}" class="mr-3" alt="" style="max-width: 300px;">
+                                        {{ end }}
+                                        <div class="media-body">
+                                            <h1 class="mt-0">{{.Title }}</h1>
+                                            {{.ContentHTML}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /main -->
+
                     </div>
                 </div>
             {{ end }}
@@ -162,9 +184,26 @@
         <script>
 
 
+            // build sidebar achors
+            $('.media-body h1, .media-body h2, .media-body h3, .media-body h4, .media-body h5, .media-body h6').each(function(i, elem) {
+                var $elem = $(elem);
+                $elem.attr('id', 'ss'+i);
+                $('#menu').append(
+                    $('<li>').addClass('nav-item')
+                        .append(
+                            $('<a>', {href: '#ss'+i}).addClass('nav-link').append($elem.text())
+                        )
+                );
+                // $('body').scrollspy({ target: '#menu' });
+            });
+            $('[data-spy="scroll"]').each(function () {
+                $(this).scrollspy('refresh');
+            });
+
+
             $(document).ready(function(){
 
-                // scroll to top listeners
+                // scroll to top
             	$(window).scroll(function () {
             			if ($(this).scrollTop() > 50) {
             				$('#back-to-top').fadeIn();
@@ -173,7 +212,6 @@
             			}
             		});
 
-        		// scroll body to 0px on click
         		$('#back-to-top').click(function () {
         			$('body,html').animate({
         				scrollTop: 0
@@ -182,68 +220,34 @@
         		});
 
 
-                // activate first item
+                // Post Carousel
                 $($('.carousel-item')[0]).addClass('active');
 
-                // enable carousel
                 var $elem = $('#postCarousel').carousel({
                     'interval': 5000
                 });
 
-                // enable event listeners
                 $('.carousel-item').on('click', function(e) {
                     window.location.href = $(e.target).closest('.carousel-item').attr('href');
                 });
 
-            });
-            //
-            //
-            //
-            // // Post carousel
-            // (function($) {
-            //     // activate first item
-            //     $($('.carousel-item')[0]).addClass('active');
-            //
-            //     // enable carousel
-            //     var $elem = $('#postCarousel').carousel({
-            //         'interval': 5000
-            //     });
-            //
-            //     // enable event listeners
-            //     $('.carousel-item').on('click', function(e) {
-            //         window.location.href = $(e.target).closest('.carousel-item').attr('href');
-            //     });
-            // })(jQuery);
-            //
-            //
-            // // Navbar scroll handlers
-            $(document).ready(function() {
-
 
                 // Navbar scroll handlers
-                var toggleAffix = function(affixElement, scrollElement, wrapper) {
-                    var height = affixElement.outerHeight(),
-                    top = wrapper.offset().top;
-                    if (scrollElement.scrollTop() > top){
-                        wrapper.height(height);
+                var toggleAffix = function(affixElement, scrollElement) {
+                    var height = affixElement.outerHeight()
+                    if (scrollElement.scrollTop() > 10){
                         affixElement.addClass("affix");
                     } else {
                         affixElement.removeClass("affix");
-                        wrapper.height('auto');
                     }
                 };
 
                 $('[data-toggle="affix"]').each(function() {
-                    var $elem = $(this),
-                        wrapper = $('<div></div>');
-                    $elem.before(wrapper);
-
+                    var $elem = $(this);
                     $(window).on('scroll resize', function(e) {
-                        toggleAffix($elem, $(this), wrapper);
+                        toggleAffix($elem, $(this));
                     });
-
-                    // initialize
-                    toggleAffix($elem, $(window), wrapper);
+                    toggleAffix($elem, $(window));
                 });
 
             });

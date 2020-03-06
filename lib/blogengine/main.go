@@ -58,6 +58,7 @@ type BlogEngine struct {
 	BasePath     string
 	Template     *template.Template
 	TemplateName string
+	GetTemplate func()  *template.Template
 }
 
 func (self *BlogEngine) getSlug(fpath string) string {

@@ -60,6 +60,9 @@ func main() {
 		BasePath:     "/blog",
 		Template:     tmpl,
 		TemplateName: "post",
+		GetTemplate: func() *template.Template {
+			return template.Must(template.ParseFiles("tmpl/page.html"))
+		},
 	}
 	server.AttachHandler("/blog", blog)
 
