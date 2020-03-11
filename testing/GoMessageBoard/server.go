@@ -16,12 +16,40 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/gorilla/mux"
-	"github.com/karlseguin/ccache"
 	"github.com/sjsafranek/lemur"
 	"github.com/sjsafranek/logger"
 )
 
-func Save(path string, object interface{}) error {
+type DataWrapper struct {
+	Thread	*Thread `json:"thread,omitempty"`
+	Threads []*Thread `json:"threads,omitempty"`
+}
+
+type ResponseWrapper struct {
+	Status string `json:"status"`
+	Data DataWrapper `json:"data"`
+}
+
+func (self *ResponseWrapper) Marshal() (string, error) {
+	b, err := json.Marshal(self)
+	if nil != err {
+		return "", err
+	}
+	return string(b), err
+}
+
+func (self *ResponseWrapper) Write(w io.Writer) error {
+	payload, err := self.Marshal()
+	if nil != err {
+		return err
+	}
+	_, err = fmt.Fprintln(w, payload)
+	return err
+}
+
+
+// Encode to gob file
+func SaveToGobFile(path string, object interface{}) error {
 	file, err := os.Create(path)
 	if nil != err {
 		return err
@@ -30,8 +58,8 @@ func Save(path string, object interface{}) error {
 	return gob.NewEncoder(file).Encode(object)
 }
 
-// Decode Gob file
-func Load(path string, object interface{}) error {
+// Decode gob file
+func LoadGobFromFile(path string, object interface{}) error {
 	file, err := os.Open(path)
 	if nil != err {
 		return err
@@ -45,24 +73,24 @@ type Thread struct {
 	Author   string     `json:"author"`
 	Content  string     `json:"content"`
 	Time     int64      `json:"time"`
-	Comments []*Thread  `json:"commments"`
+	Threads []*Thread  `json:"threads"`
 	mux      sync.Mutex `json:"-"`
 }
 
 func (self *Thread) Add(thread *Thread) error {
 	self.mux.Lock()
-	self.Comments = append(self.Comments, thread)
+	self.Threads = append(self.Threads, thread)
 	defer self.mux.Unlock()
 	return nil
 }
 
 func (self *Thread) Get(threadId string) *Thread {
-	for _, thread := range self.Comments {
+	for _, thread := range self.Threads {
 		if threadId == thread.Id {
 			return thread
 		} else {
 			thread = thread.Get(threadId)
-			if threadId == thread.Id {
+			if nil != thread && threadId == thread.Id {
 				return thread
 			}
 		}
@@ -70,74 +98,54 @@ func (self *Thread) Get(threadId string) *Thread {
 	return nil
 }
 
-func (self *Thread) Marshal() (string, error) {
-	b, err := json.Marshal(self)
-	if nil != err {
-		return "", err
-	}
-	return string(b), err
-}
-
-func (self *Thread) Write(w io.Writer) error {
-	payload, err := self.Marshal()
-	if nil != err {
-		return err
-	}
-	_, err = fmt.Fprintln(w, payload)
-	return err
-}
+// func (self *Thread) Marshal() (string, error) {
+// 	b, err := json.Marshal(self)
+// 	if nil != err {
+// 		return "", err
+// 	}
+// 	return string(b), err
+// }
+//
+// func (self *Thread) Write(w io.Writer) error {
+// 	payload, err := self.Marshal()
+// 	if nil != err {
+// 		return err
+// 	}
+// 	_, err = fmt.Fprintln(w, payload)
+// 	return err
+// }
 
 type BulletinBoard struct {
 	filename string               `json:"file"`
-	Root     map[string]*Thread   `json:"root"`
+	Threads     []*Thread   `json:"threads"`
 	mux      sync.Mutex           `json:"-"`
-	cache    *ccache.LayeredCache `json:"-"`
 }
 
-func (self *BulletinBoard) Marshal() (string, error) {
-	b, err := json.Marshal(self)
-	if nil != err {
-		return "", err
-	}
-	return string(b), err
-}
-
-func (self *BulletinBoard) Write(w io.Writer) error {
-	payload, err := self.Marshal()
-	if nil != err {
-		return err
-	}
-	_, err = fmt.Fprintln(w, payload)
-	return err
-}
-
-// func (self *BulletinBoard) get(threadId string) *Thread {
-// 	item := self.cache.Get("thread", threadId)
-// 	if nil != item {
-// 		return item.Value().(*Thread)
+// func (self *BulletinBoard) Marshal() (string, error) {
+// 	b, err := json.Marshal(self)
+// 	if nil != err {
+// 		return "", err
 // 	}
-// 	return nil
+// 	return string(b), err
 // }
 //
-// func (self *BulletinBoard) set(thread  *Thread) {
-// 	self.cache.Set("thread", thread.Id, thread, 5*time.Minute)
+// func (self *BulletinBoard) Write(w io.Writer) error {
+// 	payload, err := self.Marshal()
+// 	if nil != err {
+// 		return err
+// 	}
+// 	_, err = fmt.Fprintln(w, payload)
+// 	return err
 // }
 
 func (self *BulletinBoard) Get(threadId string) *Thread {
-	// thread := self.get(threadId)
-	// if nil != thread {
-	// 	return thread
-	// }
-
-	for id, list := range self.Root {
-		if id == threadId {
-			// self.set(list)
-			return list
+	for _, thread1 := range self.Threads {
+		if thread1.Id == threadId {
+			return thread1
 		}
-		thread := list.Get(threadId)
-		if nil != thread {
-			// self.set(thread)
-			return thread
+		thread2 := thread1.Get(threadId)
+		if nil != thread2 {
+			return thread2
 		}
 	}
 	return nil
@@ -146,27 +154,20 @@ func (self *BulletinBoard) Get(threadId string) *Thread {
 func (self *BulletinBoard) Add(thread *Thread) error {
 	self.mux.Lock()
 	defer self.mux.Unlock()
-	self.Root[thread.Id] = thread
+	// self.Threads[thread.Id] = thread
+		self.Threads = append( self.Threads,  thread)
 	return nil
 }
 
-func (self *BulletinBoard) Has(threadId string) bool {
-	self.mux.Lock()
-	defer self.mux.Unlock()
-	_, ok := self.Root[threadId]
-	return ok
-}
+// func (self *BulletinBoard) Has(threadId string) bool {
+// 	self.mux.Lock()
+// 	defer self.mux.Unlock()
+// 	_, ok := self.Threads[threadId]
+// 	return ok
+// }
 
 func (self *BulletinBoard) Save() error {
-	return Save(self.filename, self)
-}
-
-func (self *BulletinBoard) Load() error {
-	self.Root = make(map[string]*Thread)
-	if _, err := os.Stat(self.filename); !os.IsNotExist(err) {
-		return Load(self.filename, self)
-	}
-	return nil
+	return SaveToGobFile(self.filename, self)
 }
 
 func (self *BulletinBoard) ServeHTTP(w http.ResponseWriter, r *http.Request) {
@@ -176,7 +177,7 @@ func (self *BulletinBoard) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	// create root thread
 	if "" == threadId {
 		if "POST" == r.Method {
-			thread, err := self.createThread(r)
+			thread, err := self.createThreadFromHttpRequest(r)
 			if nil != err {
 				panic(err)
 			}
@@ -187,11 +188,17 @@ func (self *BulletinBoard) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 				logger.Error(err)
 			}
 
-			self.handleGetList(w, r, thread)
+			self.getThreadHttpHandler(w, r, thread)
 			return
 		}
 		if "GET" == r.Method {
-			self.Write(w)
+			wrapper := ResponseWrapper{
+				Status: "ok",
+				Data: DataWrapper{
+					Threads: self.Threads,
+				},
+			}
+			wrapper.Write(w)
 			return
 		}
 		w.WriteHeader(http.StatusMethodNotAllowed)
@@ -204,14 +211,12 @@ func (self *BulletinBoard) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	logger.Info(thread, r.Method)
-
 	switch r.Method {
 	case "GET":
-		self.handleGetList(w, r, thread)
+		self.getThreadHttpHandler(w, r, thread)
 		break
 	case "POST":
-		self.handleAddThread(w, r, thread)
+		self.postThreadHttpHandler(w, r, thread)
 		err := self.Save()
 		if nil != err {
 			logger.Error(err)
@@ -223,15 +228,7 @@ func (self *BulletinBoard) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func (self *BulletinBoard) handleGetList(w http.ResponseWriter, r *http.Request, thread *Thread) {
-	if nil != thread.Write(w) {
-		w.WriteHeader(http.StatusInternalServerError)
-		return
-	}
-	w.WriteHeader(http.StatusOK)
-}
-
-func (self *BulletinBoard) createThread(r *http.Request) (*Thread, error) {
+func (self *BulletinBoard) createThreadFromHttpRequest(r *http.Request) (*Thread, error) {
 	r.ParseForm()
 	result, _ := ioutil.ReadAll(r.Body)
 	r.Body.Close()
@@ -242,14 +239,39 @@ func (self *BulletinBoard) createThread(r *http.Request) (*Thread, error) {
 		return thread, err
 	}
 
+	// Set these after Unmarshal to prevent overwriting
 	thread.Time = time.Now().Unix()
 	thread.Id = uuid.New().String()
 	return thread, nil
 }
 
-func (self *BulletinBoard) handleAddThread(w http.ResponseWriter, r *http.Request, parent *Thread) {
-	thread, err := self.createThread(r)
+func (self *BulletinBoard) getThreadHttpHandler(w http.ResponseWriter, r *http.Request, thread *Thread) {
+	if nil == thread {
+		w.WriteHeader(http.StatusNotFound)
+		return
+	}
+
+	wrapper := ResponseWrapper{
+		Status: "ok",
+		Data: DataWrapper{
+			Thread: thread,
+		},
+	}
+
+	err := wrapper.Write(w)
 	if nil != err {
+		logger.Error(err)
+		w.WriteHeader(http.StatusInternalServerError)
+		return
+	}
+
+	w.WriteHeader(http.StatusOK)
+}
+
+func (self *BulletinBoard) postThreadHttpHandler(w http.ResponseWriter, r *http.Request, parent *Thread) {
+	thread, err := self.createThreadFromHttpRequest(r)
+	if nil != err {
+		logger.Error(err)
 		w.WriteHeader(http.StatusBadRequest)
 		return
 	}
@@ -260,16 +282,21 @@ func (self *BulletinBoard) handleAddThread(w http.ResponseWriter, r *http.Reques
 		return
 	}
 
-	self.handleGetList(w, r, thread)
+	self.getThreadHttpHandler(w, r, thread)
 }
 
-func New(filename string) *BulletinBoard {
-	bb := &BulletinBoard{filename: filename}
-	err := bb.Load()
-	if nil != err {
-		panic(err)
+func New(filename string) (*BulletinBoard, error) {
+	bb := &BulletinBoard{
+		filename: filename,
 	}
-	return bb
+
+	_, err := os.Stat(filename)
+	if !os.IsNotExist(err) {
+		return bb, LoadGobFromFile(filename, bb)
+	} else {
+		return bb, nil
+	}
+	return bb, err
 }
 
 const (
@@ -306,11 +333,13 @@ func main() {
 	logger.Debug("Go Compiler: ", runtime.Compiler)
 	logger.Debug("NumGoroutine: ", runtime.NumGoroutine())
 
-	var bb = New("bb.gob")
+	bb, err := New("bb.gob")
+	if nil != err {
+		panic(err)
+	}
 
 	server, _ := lemur.NewServer()
 	server.AttachHandler("/bb/{threadId}", bb)
 	server.AttachHandler("/bb", bb)
-	// server.AttachHandler("/bb/{threadId}/comment", bb)
 	server.ListenAndServe(HTTP_PORT)
 }

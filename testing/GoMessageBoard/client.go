@@ -63,7 +63,7 @@ func doPost() {
 
 	body := bytes.NewBuffer([]byte(b))
 	// res, err := http.Post("http://localhost:4444/bb", "application/json;charset=utf-8", body)
-	res, err := http.Post("http://localhost:4444/bb/17e1fd28-fe8c-4567-8219-841bf0450c04", "application/json;charset=utf-8", body)
+	res, err := http.Post("http://localhost:4444/bb/1ae22a62-13c8-432e-b7fb-bcb500b8852f", "application/json;charset=utf-8", body)
 	if err != nil {
 		log.Fatal(err)
 		return
@@ -81,5 +81,5 @@ func doPost() {
 
 func main() {
 	doPost()
-	doGet()
+	// doGet()
 }
