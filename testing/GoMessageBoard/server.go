@@ -20,6 +20,26 @@ import (
 	"github.com/sjsafranek/logger"
 )
 
+// Encode to gob file
+func SaveToGobFile(path string, object interface{}) error {
+	file, err := os.Create(path)
+	if nil != err {
+		return err
+	}
+	defer file.Close()
+	return gob.NewEncoder(file).Encode(object)
+}
+
+// Decode gob file
+func LoadGobFromFile(path string, object interface{}) error {
+	file, err := os.Open(path)
+	if nil != err {
+		return err
+	}
+	defer file.Close()
+	return gob.NewDecoder(file).Decode(object)
+}
+
 type DataWrapper struct {
 	Thread	*Thread `json:"thread,omitempty"`
 	Threads []*Thread `json:"threads,omitempty"`
@@ -45,27 +65,6 @@ func (self *ResponseWrapper) Write(w io.Writer) error {
 	}
 	_, err = fmt.Fprintln(w, payload)
 	return err
-}
-
-
-// Encode to gob file
-func SaveToGobFile(path string, object interface{}) error {
-	file, err := os.Create(path)
-	if nil != err {
-		return err
-	}
-	defer file.Close()
-	return gob.NewEncoder(file).Encode(object)
-}
-
-// Decode gob file
-func LoadGobFromFile(path string, object interface{}) error {
-	file, err := os.Open(path)
-	if nil != err {
-		return err
-	}
-	defer file.Close()
-	return gob.NewDecoder(file).Decode(object)
 }
 
 type Thread struct {
