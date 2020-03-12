@@ -8,8 +8,6 @@ languageCode = "en-us"
   homeTitle = "D&D" # Set a different text for the header on the home page
   subtitle = "Build a beautiful and simple website in minutes"
   mainSections = ["post","posts"]
-  # logo = "img/avatar-icon.png" # Expecting square dimensions
-  # favicon = "img/favicon.ico"
   logo = "images/d20-icon.svg" # Expecting square dimensions
   favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"
@@ -60,6 +58,11 @@ languageCode = "en-us"
     weight = 1
 
 [[menu.main]]
+    name = "Characters"
+    url = "characters/"
+    weight = 2
+
+[[menu.main]]
     name = "Tags"
     url = "tags"
     weight = 3
@@ -67,26 +70,26 @@ languageCode = "en-us"
 [[menu.main]]
     name = "About"
     url = "pages/about"
-    weight = 3
+    weight = 4
 
 [[menu.main]]
     name = "Contact"
     url = "pages/contact"
-    weight = 3
+    weight = 5
 
 
 
 # [[menu.main]]
-#     identifier = "samples"
-#     name = "Samples"
+#     identifier = "characters"
+#     name = "Characters"
 #     weight = 2
-
-# [[menu.main]]
-#     parent = "samples"
-#     name = "Big Image Sample"
-#     url = "post/2017-03-07-bigimg-sample"
-#     weight = 1
 #
+# [[menu.main]]
+#     parent = "characters"
+#     name = "Niv Izzet"
+#     url = "characters/2017-03-07-bigimg-sample"
+#     weight = 1
+# #
 # [[menu.main]]
 #     parent = "samples"
 #     name = "Math Sample"

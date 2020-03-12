@@ -2,10 +2,10 @@
 title: "Niv Izzet"
 author: "Stefan Safranek"
 type: ""
-date: 2020-03-09T17:59:46-07:00
+date: 2020-03-09T18:03:13-07:00
 subtitle: "Artificer"
 image: ""
-tags: []
+tags: ["character"]
 ---
 
 
