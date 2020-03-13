@@ -2,7 +2,7 @@
 title: "Smokey Patches"
 author: "Stefan Safranek"
 type: ""
-date: 2020-03-09T18:03:13-07:00
+date: 2020-03-09T16:03:13-07:00
 subtitle: "Inquisitive Rouge"
 image: ""
 tags: ["character"]
@@ -10,17 +10,26 @@ tags: ["character"]
 
 
 
-Race: Tabaxi
-Background: Entertainer
-Class: Rogue
-Alignment: Chaotic Good
 
+{{< columns >}}
 
-Description:
 Smokey is a tall and lanky tabaxi with dark gray fur and black leopard spots. He is fairly expressive, gets embarrassed easily, and self conscious. When he lies his tail often gives himself away. Like most tabaxis, Smokey absolutely despises getting wet and hates being around water.
 
 Wants to prove that he is “better” than his father.
 Yearns for the approval from others.
+
+
+{{< column >}}
+
+|            |                     |
+| ---------- | -------------------:|
+| Race       | Tabaxi	           |
+| Class      | Rogue (Inquisitive) |
+| Background | Entertainer         |
+| Alignment  | Chaotic Good        |
+
+{{< endcolumns >}}
+
 
 
 Backstory:
