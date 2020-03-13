@@ -11,7 +11,7 @@ tags: ["The Rusty Tankards"]
 
 {{< columns >}}
 
-The Rusty Tankards are an [COUNTRY/KINGDOM] band formed in [CITY] in [TIME]. Their music has been described as brash, chaotic and abrasive using discordant melodies that come from seemingly no where. While most people have no idea how to classify their music, the band describes it as "Eclectic 3rd Realm". The band seems to be oblivious of popular opinion and continues to tour the land.
+The Rusty Tankards are an Dungevan band formed in Durinish. Their music has been described as brash, chaotic and abrasive using discordant melodies that come from seemingly no where. While most people have no idea how to classify their music, the band describes it as "Eclectic 3rd Realm". The band seems to be oblivious of popular opinion and continues to tour the land.
 
 {{< column >}}
 
