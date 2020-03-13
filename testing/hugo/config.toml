@@ -7,7 +7,7 @@ languageCode = "en-us"
 [Params]
   homeTitle = "D&D" # Set a different text for the header on the home page
   subtitle = "Build a beautiful and simple website in minutes"
-  mainSections = ["post","posts"]
+  mainSections = ["post","posts","worlds"]
   logo = "images/d20-icon.svg" # Expecting square dimensions
   favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"
@@ -57,20 +57,36 @@ languageCode = "en-us"
     url = ""
     weight = 1
 
+
+
 [[menu.main]]
-    name = "Characters"
-    url = "characters/"
+    name = "Worlds"
+    url = "worlds/"
     weight = 2
+
+[[menu.main]]
+    parent = "Worlds"
+    name = "Alarra"
+    url = "worlds/alarra"
+    weight = 1
+
+[[menu.main]]
+    parent = "Worlds"
+    name = "Forgotten Realms"
+    url = "worlds/forgotten-realms"
+    weight = 2
+
+
 
 [[menu.main]]
     name = "Tags"
     url = "tags"
     weight = 3
 
-[[menu.main]]
-    name = "About"
-    url = "pages/about"
-    weight = 4
+# [[menu.main]]
+#     name = "About"
+#     url = "pages/about"
+#     weight = 4
 
 [[menu.main]]
     name = "Contact"
