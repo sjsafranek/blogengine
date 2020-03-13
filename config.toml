@@ -9,7 +9,7 @@ languageCode = "en-us"
 
 [Params]
     homeTitle = "D&D" # Set a different text for the header on the home page
-    subtitle = "Tales of the Multiverse"
+    subtitle = "Tales From The Multiverse"
     mainSections = ["post","posts","worlds"]
     logo = "images/d20-icon.svg" # Expecting square dimensions
     favicon = "images/icons/d20-icon.ico"
