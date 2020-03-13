@@ -3,28 +3,39 @@ title: "Smokey Patches"
 author: "Stefan Safranek"
 type: ""
 date: 2020-03-09T19:48:27-07:00
-subtitle: "Inquisitive Rouge"
+subtitle: "Tabaxi, Rouge"
 image: "/images/smokey-patches-3.jpg"
 tags: ["character", "The Rusty Tankards"]
 ---
 
 {{< columns >}}
 
-Smokey is a tall and lanky tabaxi with dark gray fur and black leopard spots. He is fairly expressive, gets embarrassed easily, and self conscious. When he lies his tail often gives himself away. Like most tabaxis, Smokey absolutely despises getting wet and hates being around water.
+Smokey is a tall and lanky tabaxi with dark gray fur and black leopard spots.
+He is fairly expressive, easily embarrassed, and self conscious.
+When he lies his tail often gives himself away.
+Like most tabaxis, Smokey absolutely despises getting wet and hates being around water.
 
 Wants to prove that he is “better” than his father.
 Yearns for the approval from others.
 
-Smokey places the dulcimer in The Rusty Tankards
+Smokey is one of the founding members for [The Rusty Tankards](/worlds/the-rusty-tankards/the-rusty-tankards/).
 
 {{< column >}}
 
-|            |                     |
-| ---------- | -------------------:|
-| Race       | Tabaxi	           |
-| Class      | Rogue (Inquisitive) |
-| Background | Entertainer         |
-| Alignment  | Chaotic Good        |
+<div class="description-table">
+
+#### Smokey Patches
+
+<img src="/images/smokey-patches-3.jpg" class="portrait">
+
+|                   |                     |
+| ----------------- | -------------------:|
+| <b>Race</b>       | Tabaxi	          |
+| <b>Class</b>      | Rogue (Inquisitive) |
+| <b>Background</b> | Entertainer         |
+| <b>Alignment</b>  | Chaotic Good        |
+
+</div>
 
 {{< endcolumns >}}
 

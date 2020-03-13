@@ -11,16 +11,36 @@ tags: ["The Rusty Tankards"]
 
 {{< columns >}}
 
-Eclectic 3rd Realm
+The Rusty Tankards are an [COUNTRY/KINGDOM] band formed in [CITY] in [TIME]. Their music has been described as brash, chaotic and abrasive using discordant melodies that come from seemingly no where. While most people have no idea how to classify their music, the band describes it as "Eclectic 3rd Realm". The band seems to be oblivious of popular opinion and continues to tour the land.
 
 {{< column >}}
 
-| Member                 | Instrument       |
-| ---------------------- | ----------------:|
-| Anastrianna Gold Petal | Vocals, Lute     |
-| Smokey Patches         | Vocals, Dulcimer |
-| Grunk Godpunch         | Drum             |
-| Sora Daardenrian       | Bag Pipes        |
-| Gundark                | #1 Fan           |
+<div class="description-table">
+
+#### The Rusty Tankards
+
+|                |                        |                  |
+| -------------- |:----------------------:| ----------------:|
+| <b>Genres</b>  | Eclectic 3rd Realm     |                  |
+|                |                        |                  |
+| <b>Members</b> | Anastrianna Gold Petal | Vocals, Lute     |
+|                | Smokey Patches         | Vocals, Dulcimer |
+|                | Grunk Godpunch         | Drum             |
+|                | Sora Daardenrian       | Bag Pipes        |
+|                |                        |                  |
+|                | Gundark                | #1 Fan           |
+
+</div>
 
 {{< endcolumns >}}
+
+
+## Songs
+ - Thunderwave The Status Quo
+ - One Night, Magic Missle
+ - Golden Rule
+ - Fuck It! I'm a Folk Hero
+ - Misty Step (Into Your Heart)
+ - Hairball
+
+## Tours

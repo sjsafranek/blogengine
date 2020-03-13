@@ -3,8 +3,8 @@ title: "Niv Izzet"
 author: "Stefan Safranek"
 type: ""
 date: 2020-03-09T16:03:13-07:00
-subtitle: "Artificer"
-image: "/images/Niv-Izzet.jpg"
+subtitle: "Gnome, Artificer"
+image: "/images/niv-izzet-1.jpg"
 tags: ["Alarra", "character", "B Team"]
 ---
 
@@ -19,14 +19,23 @@ Niv is often seen jotting down notes in his note book, concocting a strange new 
 
 {{< column >}}
 
-|            |                       |
-| ---------- | ---------------------:|
-| Race       | Gnome (Rock)	         |
-| Class      | Artificer (Alchemist) |
-| Background | Sage                  |
-| Alignment  | Chaotic Good          |
+<div class="description-table">
+
+#### Niv Izzet
+
+<img src="/images/niv-izzet-1.jpg" class="portrait">
+
+|                   |                       |
+| ----------------- | ---------------------:|
+| <b>Race</b>       | Gnome (Rock)	        |
+| <b>Class</b>      | Artificer (Alchemist) |
+| <b>Background</b> | Sage                  |
+| <b>Alignment</b>  | Chaotic Good          |
+
+</div>
 
 {{< endcolumns >}}
+
 
 ## Early life
 Born and raised in Arcona, Niv was the son of two professors, Serje and Reshi Izzet, who taught at Arcona's University of History and Ancient Cultures. Niv was naturally gifted in school and quickly surpassed the rest of his cohort. He was accepted into the university at the early age of 16.

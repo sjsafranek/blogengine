@@ -3,8 +3,8 @@ title: "Dr. Eli Blackwell"
 author: "Stefan Safranek"
 type: ""
 date: 2020-03-09T18:31:31-07:00
-subtitle: "Gnome Wizard"
-image: "/images/Dr-Eli-Blackwell.jpg"
+subtitle: "Gnome, Wizard"
+image: "/images/dr-eli-blackwell-1.jpg"
 tags: ["character", "Forgotten Realms"]
 ---
 
@@ -20,14 +20,23 @@ Often seen with his "friends" Leonard, Leopold, Riddle and Raddle
 
 {{< column >}}
 
-|            |                     |
-| ---------- | -------------------:|
-| Race       | Gnome (Forest)      |
-| Class      | Wizard (Necromancy) |
-| Background | Doctor              |
-| Alignment  | Lawful Good         |
+<div class="description-table">
+
+#### Dr. Eli Blackwell
+
+<img src="/images/dr-eli-blackwell-1.jpg" class="portrait">
+
+|                   |                     |
+| ----------------- | -------------------:|
+| <b>Race</b>       | Gnome (Forest)      |
+| <b>Class</b>      | Wizard (Necromancy) |
+| <b>Background</b> | Doctor              |
+| <b>Alignment</b>  | Lawful Good         |
+
+</div>
 
 {{< endcolumns >}}
+
 
 ## Early life
 Eli grew up in the small gnomish village of Elderbrook, nestled in the Misty Forest, about 100 miles south east of Waterdeep.

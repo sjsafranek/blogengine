@@ -1,26 +1,30 @@
 title = "D&D"
-baseurl = "http://example.org/"
+baseurl = ""
 theme = "beautifulhugo"
 languageCode = "en-us"
 
+# allows raw html to be rendered from markdown files
+[markup.goldmark.renderer]
+    unsafe= true
 
 [Params]
-  homeTitle = "D&D" # Set a different text for the header on the home page
-  subtitle = "Build a beautiful and simple website in minutes"
-  mainSections = ["post","posts","worlds"]
-  logo = "images/d20-icon.svg" # Expecting square dimensions
-  favicon = "img/favicon.ico"
-  dateFormat = "January 2, 2006"
-  commit = false
-  rss = true
-  comments = true
-  readingTime = true
-  wordCount = true
-  useHLJS = true
-  socialShare = true
-  delayDisqus = true
-  showRelatedPosts = true
-  # custom_css = ["css/header.css"]
+    homeTitle = "D&D" # Set a different text for the header on the home page
+    subtitle = "Tales of the Multiverse"
+    mainSections = ["post","posts","worlds"]
+    logo = "images/d20-icon.svg" # Expecting square dimensions
+    favicon = "img/favicon.ico"
+    dateFormat = "January 2, 2006"
+    commit = false
+    rss = true
+    comments = true
+    readingTime = true
+    wordCount = true
+    useHLJS = true
+    socialShare = true
+    delayDisqus = true
+    showRelatedPosts = true
+    custom_css = ["css/style.css"]
+    custom_js = ["js/ui.js"]
 
 # [Params.staticman]
 #   api = "http://207.154.225.107:3333/v2/connect/sjsafranek/staticman_blog_comments/master/comments"
@@ -45,12 +49,14 @@ languageCode = "en-us"
 #  desc = "Hexagon"
 
 [Author]
-  name = "Stefan Safranek"
-  email = "sjsafranek@gmail.com"
-  facebook = "stefan.safranek"
-  github = "sjsafranek"
-  twitter = "sjsafranek"
-  stackoverflow = "users/10135286/stefan"
+    name = "Stefan Safranek"
+    email = "sjsafranek@gmail.com"
+    facebook = "stefan.safranek"
+    github = "sjsafranek"
+    twitter = "sjsafranek"
+    stackoverflow = "users/10135286/stefan"
+
+
 
 [[menu.main]]
     name = "Blog"
@@ -83,42 +89,22 @@ languageCode = "en-us"
     weight = 3
 
 
+
 [[menu.main]]
     name = "Tags"
     url = "tags"
     weight = 3
+
+
 
 # [[menu.main]]
 #     name = "About"
 #     url = "pages/about"
 #     weight = 4
 
+
+
 [[menu.main]]
     name = "Contact"
     url = "pages/contact"
     weight = 5
-
-
-
-# [[menu.main]]
-#     identifier = "characters"
-#     name = "Characters"
-#     weight = 2
-#
-# [[menu.main]]
-#     parent = "characters"
-#     name = "Niv Izzet"
-#     url = "characters/2017-03-07-bigimg-sample"
-#     weight = 1
-# #
-# [[menu.main]]
-#     parent = "samples"
-#     name = "Math Sample"
-#     url = "post/2017-03-05-math-sample"
-#     weight = 2
-#
-# [[menu.main]]
-#     parent = "samples"
-#     name = "Code Sample"
-#     url = "post/2016-03-08-code-sample"
-#     weight = 3
