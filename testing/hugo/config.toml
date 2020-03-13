@@ -76,6 +76,11 @@ languageCode = "en-us"
     url = "worlds/forgotten-realms"
     weight = 2
 
+[[menu.main]]
+    parent = "Worlds"
+    name = "The Rusty Tankards"
+    url = "worlds/the-rusty-tankards"
+    weight = 3
 
 
 [[menu.main]]

@@ -11,3 +11,4 @@ image: ""
 
  - [Alarra](/worlds/alarra/)
  - [Forgotten Realms](/worlds/forgotten-realms/)
+ - [The Rusty Tankards](/worlds/the-rusty-tankards/)

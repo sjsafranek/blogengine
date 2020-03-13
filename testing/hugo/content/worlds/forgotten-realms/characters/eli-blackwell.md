@@ -5,7 +5,7 @@ type: ""
 date: 2020-03-09T18:31:31-07:00
 subtitle: "Gnome Wizard"
 image: "/images/Dr-Eli-Blackwell.jpg"
-tags: ["character", "Eli Blackwell", "Forgotten Realms"]
+tags: ["character", "Forgotten Realms"]
 ---
 
 {{< columns >}}
@@ -18,8 +18,6 @@ Desires to help people less fortunate
 
 Often seen with his "friends" Leonard, Leopold, Riddle and Raddle
 
-Others find him odd... making it a bit of a loner
-
 {{< column >}}
 
 |            |                     |
@@ -30,7 +28,6 @@ Others find him odd... making it a bit of a loner
 | Alignment  | Lawful Good         |
 
 {{< endcolumns >}}
-
 
 ## Early life
 Eli grew up in the small gnomish village of Elderbrook, nestled in the Misty Forest, about 100 miles south east of Waterdeep.

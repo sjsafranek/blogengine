@@ -28,7 +28,6 @@ Niv is often seen jotting down notes in his note book, concocting a strange new 
 
 {{< endcolumns >}}
 
-
 ## Early life
 Born and raised in Arcona, Niv was the son of two professors, Serje and Reshi Izzet, who taught at Arcona's University of History and Ancient Cultures. Niv was naturally gifted in school and quickly surpassed the rest of his cohort. He was accepted into the university at the early age of 16.
 
