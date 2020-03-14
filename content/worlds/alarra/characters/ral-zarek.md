@@ -21,9 +21,9 @@ tags: ["Alarra", "character", "A Team"]
 
 |                   |                       |
 | ----------------- | ---------------------:|
-| <b>Race</b>       | Tiefling	        |
-| <b>Class</b>      | Warlock |
-| <b>Background</b> | Charlatan                  |
+| <b>Race</b>       | Tiefling	            |
+| <b>Class</b>      | Warlock               |
+| <b>Background</b> | Charlatan             |
 | <b>Alignment</b>  | Chaotic Good          |
 
 </div>
@@ -36,11 +36,11 @@ Ral Zarek was abandoned when he was young and spent is early years in an orphana
 
 At the age of 8 he was adopted by a wealthy merchant family (Good Human, rare metals) and spent the next few years in the city of Vale. During this time he would occasionally travel with his foster father to major cities in the Kingdoms of [Arcona](/TODO), [Dhuros](/TODO), and [Termina](/TODO). On these travels he learned about the cultures and customs of these other kingdoms.
 
-When [Ral](/characters/pcs/ral_zarek) was 12, [Emrakul (Titan of Corruption)](/TODO) started to telepathically communicate with him. Within his mind she took the form as a high elf priestess, due to his inability to comprehend her physical and magical nature. Over the next few months she tapped into his mind with increasing regularity, offering him visions of the outer planes. It wasn't long before he was completely enthralled with her powers and fell in love.
+When Ral was 12, [Emrakul (Titan of Corruption)](/TODO) started to telepathically communicate with him. Within his mind she took the form as a high elf priestess, due to his inability to comprehend her physical and magical nature. Over the next few months she tapped into his mind with increasing regularity, offering him visions of the outer planes. It wasn't long before he was completely enthralled with her powers and fell in love.
 
 [Emrakul](/TDO) offered Ral a chance to tap into the magical energies in exchange for helping bring her into the material plane. He accepted this pact and began testing his newly acquired powers. Shortly after, Ral's foster parents were found dead, having committing "suicide" by bludgeoning their heads into an altar of the [Sol (the sun god)](/TODO). Their sudden suicide was a result of Ral's first attempt at sharing thoughts & visions of the outer planes. When he asked [Emrakul](/TODO) why this had occurred she simply responded "Their minds were too frail".
 
-He spent the rest of his young adulthood living on the streets, surviving off of pick pocketing, minor cons, and using his magic to manipulate others. At the young age of 17, and made his way to [Dhuros](/TODO) in search of an ancient relic that would help bring [Emrakul](/TODO) into this plane. During his travels he (age 19) ran into Vyr (Vire) in the [Tir-Azel](/TODO) (Elven roads). [Emrakul](/TODO) deemed he would be a good asset. She erased his mind and made him a servant, sworn to protect [Ral](/TODO) and help find the relic.
+He spent the rest of his young adulthood living on the streets, surviving off of pick pocketing, minor cons, and using his magic to manipulate others. At the young age of 17, and made his way to [Dhuros](/TODO) in search of an ancient relic that would help bring [Emrakul](/TODO) into this plane. During his travels he (age 19) ran into Vyr (Vire) in the [Tir-Azel](/TODO) (Elven roads). [Emrakul](/TODO) deemed he would be a good asset. She erased his mind and made him a servant, sworn to protect Ral and help find the relic.
 
 
 ## A Team

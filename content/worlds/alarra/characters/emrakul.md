@@ -5,7 +5,7 @@ type: ""
 date: 2020-03-13T17:43:31-07:00
 subtitle: "The Promised End"
 image: "/images/Emrakul-the-Promised-End.jpg"
-tags: ["Alarra", "character", "A Team"]
+tags: ["Alarra", "character"]
 ---
 
 {{< columns >}}
@@ -35,19 +35,27 @@ tags: ["Alarra", "character", "A Team"]
 
 Feeds on planes. Does not affect unliving matter. Twists all living things. Leaves behind yellow dust. Lives outside the planes. When it wants to feed it extends part of its "body" into the plane to create a physical manifestation, along with an army of drones. Refers to herself as The Promised End. Thousands of years ago “she” was banished by the Gods from the planes and is assumed to have been destroyed for good. Wishes to use [Arcons Breath](/TODO) to free her from her imprisonment.
 
-<div class="image-container left">
-    <img src="/images/emrakul-elf-maiden.jpg" height="400px" width="auto">
+
+
+{{< columns >}}
+
+<div class="description-table">
+    <img src="/images/emrakul-elf-maiden.jpg" class="portrait">
 </div>
 
+{{< column >}}
 
 Legend states that five heroes banded together and banished Emrakul from the planes:
 *Holy Warrior*, *Huntress*, *Archmage of Circle*, *The Enlighted One*, *Humble Trail Guide*.
 
+{{< endcolumns >}}
 
-##### Servants
+
+
+## Servants
 [Milius Moores (First servant of Emrakul)](/TODO)
 <br>
-[Ral Zarek](/TODO)
+[Ral Zarek](/worlds/alarra/characters/ral-zarek)
 <br>
 [Vyr](/TODO)
 
