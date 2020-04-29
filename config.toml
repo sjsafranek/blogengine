@@ -2,6 +2,7 @@ title = "D&D"
 baseurl = ""
 theme = "beautifulhugo"
 languageCode = "en-us"
+canonifyurls = true
 
 # allows raw html to be rendered from markdown files
 [markup.goldmark.renderer]
