@@ -46,7 +46,9 @@ Since his parents worked full time, he spent much of his early child hood with i
 
 <div class="description-table">
 	<img src="/images/helga-the-great-airship-1.jpg" class="portrait">
-	<i> - Helga the Great - </i>
+	<div style="text-align:center;">
+		<i>Helga the Great</i>
+	</div>
 </div>
 
 {{< column >}}

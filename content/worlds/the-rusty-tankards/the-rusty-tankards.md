@@ -39,11 +39,11 @@ The Rusty Tankards are an Dungevan band formed in Durinish. Their music has been
 
 
 ## Songs
- - Thunderwave The Status Quo
- - One Night, Magic Missle
- - Golden Rule
- - Fuck It! I'm a Folk Hero
- - Misty Step (Into Your Heart)
- - Hairball
+ - [Thunderwave The Status Quo](/worlds/the-rusty-tankards/songs/thunderwave-the-status-quo)
+ - [One Night, Magic Missile](/worlds/the-rusty-tankards/songs/one-night-magic-missile)
+ - [Golden Rule](/worlds/the-rusty-tankards/songs/golden-rule)
+ - [Fuck It! I'm a Folk Hero](/worlds/the-rusty-tankards/songs/fuck-it-im-a-folk-hero)
+ - [Misty Step (Into Your Heart)](/worlds/the-rusty-tankards/songs/misty-step-into-your-heart)
+ - [Hairball](/worlds/the-rusty-tankards/songs/hairball)
 
 ## Tours
