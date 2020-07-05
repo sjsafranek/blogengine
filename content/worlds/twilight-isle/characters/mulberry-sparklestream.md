@@ -25,9 +25,9 @@ Character Sheet: https://ddb.ac/characters/31438685/6rJYxH
 |                   |                     |
 | ----------------- | -------------------:|
 | <b>Race</b>       | Fairy (Pixie)       |
-| <b>Class</b>      | Cleric (Trickster) |
-| <b>Background</b> |               |
-| <b>Alignment</b>  | Chaotic Good         |
+| <b>Class</b>      | Cleric (Trickster)  |
+| <b>Background</b> | Acolyte             |
+| <b>Alignment</b>  | Chaotic Good        |
 
 </div>
 

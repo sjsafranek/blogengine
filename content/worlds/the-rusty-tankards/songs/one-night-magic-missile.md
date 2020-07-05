@@ -3,52 +3,33 @@ title: "One Night, Magic Missile"
 author: "Stefan Safranek"
 type: ""
 date: 2020-04-28T21:50:01-07:00
-subtitle: ""
+subtitle: "The Rusty Tankards"
 image: ""
-tags: ["The Rusty Tankards"]
+tags: ["The Rusty Tankards", "song"]
 ---
 
-<!-- #### One Night, Magic Missile - The Rusty Tankards -->
+G &nbsp; &nbsp; &nbsp; &nbsp; D &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; A
 
-G	D	A	A
-
-[Verse 1]
-
-Your mother says, I've got problems
-
-Yeah? Well she might be right
-
-Your father says I am dangerous
-
+[Verse 1] <br>
+Your mother says, I've got problems <br>
+Yeah? Well she might be right <br>
+Your father says I am dangerous <br>
 Cause I'm only hear for one night
 
-
-[Chorus]
-
-One night, magic missile
-
-One night, don't have to aim
-
-One night, magic missile - I'll be your
-
+[Chorus] <br>
+One night, magic missile <br>
+One night, don't have to aim <br>
+One night, magic missile - I'll be your <br>
 One night, critical hit
 
-
-[Verse 2]
-
-Now your sister, should have warned your
-
-I was with her the other night
-
-Your brother would kill me if he knew
-
+[Verse 2] <br>
+Now your sister, should have warned your <br>
+I was with her the other night <br>
+Your brother would kill me if he knew <br>
 And he'd be perfectly justified
-
 
 [Chorus]
 
-
 [Chorus] *Quiet and build up*
-
 
 [Chorus]
