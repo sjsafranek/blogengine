@@ -89,6 +89,11 @@ canonifyurls = true
     url = "worlds/the-rusty-tankards"
     weight = 3
 
+[[menu.main]]
+    parent = "Worlds"
+    name = "Twilight Isle"
+    url = "worlds/twilight-isle"
+    weight = 4
 
 
 [[menu.main]]
