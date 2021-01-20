@@ -131,4 +131,4 @@ Mulberry doesn’t remember why he ended up on the Cordelia. Could it have been 
 
 
 ## Relationships
-Drinking buddy with [Gimble Kadwick](/worlds/call-of-the-dreamers/characters/gimble-kadwich)
+Drinking buddy with [Gimble Kadwick](/worlds/call-of-the-dreamers/characters/gimble-kadwick)

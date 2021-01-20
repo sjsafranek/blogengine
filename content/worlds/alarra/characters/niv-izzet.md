@@ -61,16 +61,23 @@ The early years of Niv's professional career were spent working for the universi
 During his time at the university Niv helped uncover an ancient tomb that once belonged Tezzeret the Inventor. Legend states that [1000 years] ago Tezzeret had assembled an army of constructs and sought out to conquer the [realm].  Before Tezzeret could complete his quest he was poisoned in during an assassination attempt. Although he managed to survive his body was left withered and destroyed as the poison ate through his bones. Tezzeret went into hiding, and it is rumored that he spent the rest of his days trying to restore his body. While excavating tomb, Niv found an ancient text left behind from Tezzeret himself. Niv has tried many times to read/understand the text yet to no avail. As far as he can tell it is a design to a powerful device must not fall into the wrong hands. Niv carries this text in one of his many pockets…
 
 ## B-Team
-Part time teaching position as a potions professor at Galazaar's Adventurers Academy.
 
-Group of companions from the Galazaar's Adventurers Academy: Jack, Twang, Gerethrial, and Merial.
+{{< columns >}}
 
-<div class="description-table">
-	<img src="/images/niv-izzet-sketch-1.jpg" class="portrait">
-	<div style="text-align:center;">
-		<i>Niv Izzet</i>
+	Part time teaching position as a potions professor at Galazaar's Adventurers Academy.
+
+	Group of companions from the Galazaar's Adventurers Academy: Jack, Twang, Gorethrial, and Merial.
+
+{{< column >}}
+
+	<div class="description-table">
+		<img src="/images/niv-izzet-sketch-1.jpg" class="portrait">
+		<div style="text-align:center;">
+			<i>Niv Izzet</i>
+		</div>
 	</div>
-</div>
+
+{{< endcolumns >}}
 
 ### Laughing Curse
 Camay Underbow
