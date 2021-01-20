@@ -117,8 +117,8 @@ Despite Mul’s attitude the Fairy Godmother took a liking to him. One day the F
 The Fairy Godmother blessed Mul and sent him off to travel distant lands in search of his ‘Joy’. Fairy Godmother led Mul to a clearing where the famous inventor Alabaster Izzet was waiting with his airship, “Helga the Great”. Helga set sail with Mul and planeshifted to the material plane.
 
 The material plane was unlike the Feywild in almost every way. While every town Mul went to was much larger than he was used to, the atmosphere was calm. No hyper active towns folk prepping for the upcoming celebration. No obtrusive bright colors overwhelming your field of view. Just the sights and sounds of individuals going through the same old monotonous routine day in and day out. Mul found this extremely soothing and relaxing.
- 
-It wasn’t long until Mulberry discovered the most beautiful thing he had ever come across, Ale. 
+
+It wasn’t long until Mulberry discovered the most beautiful thing he had ever come across, Ale.
 
 
 
@@ -128,3 +128,7 @@ It wasn’t long until Mulberry discovered the most beautiful thing he had ever 
 Mulberry doesn’t remember why he ended up on the Cordelia. Could it have been one drink to many? Perhaps it was that “Open Bar” sign placing him under some sort of magical enchantment. All that Mul remembers is waking up in a drunken stupor as the ship set out to sail. But honestly… does it really matter?
 
 
+
+
+## Relationships
+Drinking buddy with [Gimble Kadwick](/worlds/call-of-the-dreamers/characters/gimble-kadwich)

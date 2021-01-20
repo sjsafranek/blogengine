@@ -65,12 +65,27 @@ Part time teaching position as a potions professor at Galazaar's Adventurers Aca
 
 Group of companions from the Galazaar's Adventurers Academy: Jack, Twang, Gerethrial, and Merial.
 
+<div class="description-table">
+	<img src="/images/niv-izzet-sketch-1.jpg" class="portrait">
+	<div style="text-align:center;">
+		<i>Niv Izzet</i>
+	</div>
+</div>
+
 ### Laughing Curse
 Camay Underbow
 
 ## Izzet's Worldly Elixirs
 After a full life of adventuring Niv and Camay settled down and founded Izzet's Worldly Elixirs which supplies much of Arkona, Amarton, and Zephra with potions.
 
+
+
+
 ##
 Brewery
 Pinchers Aleworks
+
+
+## Books
+ - Coalescing Concoctions and Other Brews - Professor Niv Izzet
+ - Tales From My Adventures Across the Multiverse (Preface by Gorethrial Devosillia) - Professor Niv Izzet
