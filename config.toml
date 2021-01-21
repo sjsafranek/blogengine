@@ -70,7 +70,7 @@ canonifyurls = true
 
 [[menu.main]]
     name = "Worlds"
-    url = "world/"
+    url = "worlds/"
     weight = 2
 
 [[menu.main]]
@@ -141,5 +141,5 @@ canonifyurls = true
 [taxonomies]
     category = "categories"
     tag = "tags"
-    worlds = "world"
+    worlds = "worlds"
     parties = "parties"
