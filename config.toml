@@ -4,9 +4,11 @@ theme = "beautifulhugo"
 languageCode = "en-us"
 canonifyurls = true
 
+
 # allows raw html to be rendered from markdown files
 [markup.goldmark.renderer]
     unsafe= true
+
 
 [Params]
     homeTitle = "D&D" # Set a different text for the header on the home page
@@ -26,6 +28,7 @@ canonifyurls = true
     showRelatedPosts = true
     custom_css = ["css/style.css"]
     custom_js = ["js/ui.js"]
+
 
 # [Params.staticman]
 #   api = "http://207.154.225.107:3333/v2/connect/sjsafranek/staticman_blog_comments/master/comments"
@@ -49,6 +52,7 @@ canonifyurls = true
 #  src = "img/hexagon.jpg"
 #  desc = "Hexagon"
 
+
 [Author]
     name = "Stefan Safranek"
     email = "sjsafranek@gmail.com"
@@ -58,12 +62,10 @@ canonifyurls = true
     stackoverflow = "users/10135286/stefan"
 
 
-
 [[menu.main]]
     name = "Blog"
     url = ""
     weight = 1
-
 
 
 [[menu.main]]
@@ -71,35 +73,41 @@ canonifyurls = true
     url = "worlds/"
     weight = 2
 
-[[menu.main]]
-    parent = "Worlds"
-    name = "Alarra"
-    url = "worlds/alarra"
-    weight = 1
-
-[[menu.main]]
-    parent = "Worlds"
-    name = "Call of the Dreamers"
-    url = "worlds/call-of-the-dreamers"
-    weight = 2
-
-[[menu.main]]
-    parent = "Worlds"
-    name = "Forgotten Realms"
-    url = "worlds/forgotten-realms"
-    weight = 3
-
-[[menu.main]]
-    parent = "Worlds"
-    name = "The Rusty Tankards"
-    url = "worlds/the-rusty-tankards"
-    weight = 4
+# [[menu.main]]
+#     parent = "Worlds"
+#     name = "Alarra"
+#     url = "worlds/alarra"
+#     weight = 1
+#
+# [[menu.main]]
+#     parent = "Worlds"
+#     name = "Call of the Dreamers"
+#     url = "worlds/call-of-the-dreamers"
+#     weight = 2
+#
+# [[menu.main]]
+#     parent = "Worlds"
+#     name = "Forgotten Realms"
+#     url = "worlds/forgotten-realms"
+#     weight = 3
+#
+# [[menu.main]]
+#     parent = "Worlds"
+#     name = "The Rusty Tankards"
+#     url = "worlds/the-rusty-tankards"
+#     weight = 4
 
 [[menu.main]]
     parent = "Worlds"
     name = "Twilight Isle"
-    url = "worlds/twilight-isle"
+    url = "worlds/Twilight Isle"
     weight = 5
+
+# [[menu.main]]
+#     parent = "Worlds"
+#     name = "Twilight Isle"
+#     url = "worlds/twilight-isle"
+#     weight = 5
 
 
 [[menu.main]]
@@ -108,12 +116,16 @@ canonifyurls = true
     weight = 3
 
 
+[[menu.main]]
+    name = "Categories"
+    url = "categories"
+    weight = 4
+
 
 # [[menu.main]]
 #     name = "About"
 #     url = "pages/about"
 #     weight = 4
-
 
 
 [[menu.main]]
@@ -122,8 +134,7 @@ canonifyurls = true
     weight = 5
 
 
-
-
 [taxonomies]
     category = "categories"
     tag = "tags"
+    worlds = "worlds"
