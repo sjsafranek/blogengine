@@ -5,7 +5,10 @@ type: ""
 date: 2020-07-05T12:52:34-07:00
 subtitle: "The Rusty Tankards"
 image: ""
-tags: ["The Rusty Tankards", "song"]
+tags: ["song"]
+categories: []
+parties: ["The Rusty Tankards"]
+worlds: ["The Rusty Tankards"]
 ---
 
 Capo 7

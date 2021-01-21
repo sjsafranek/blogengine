@@ -5,7 +5,10 @@ type: ""
 date: 2020-04-28T22:05:12-07:00
 subtitle: "The Rusty Tankards"
 image: ""
-tags: ["The Rusty Tankards", "song"]
+tags: ["song"]
+categories: []
+parties: ["The Rusty Tankards"]
+worlds: ["The Rusty Tankards"]
 ---
 
 
@@ -32,7 +35,7 @@ Folk hero <br>
 Folk hero <br>
 I just want to be a <br>
 Folk hero <br>
-Folk hero <br> 
+Folk hero <br>
 Folk hero <br>
 Fuck it! I'm a <br>
 Folk hero

@@ -56,3 +56,6 @@ A year and a half ago, Quick Thunder was giving Smokey another one of his "You a
 
 ## The Rusty Tankards
 Over the next few months Smokey got by working as a street performer as he made his way up north. Hitching a few rides with trade caravans and working odd jobs, he moved from town to town. Eventually he met up with several traveling musicians and they formed [The Rusty Tankards](/parties/the-rusty-tankards).
+
+## God of Metal
+Upon seeing the wonders of [Grunk Godpunch](/characters/grunk-godpunch) deity at work, Smokey made a pact with the [God of Metal](TODO)
