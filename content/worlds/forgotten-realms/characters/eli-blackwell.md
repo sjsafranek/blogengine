@@ -61,7 +61,7 @@ While working as a coroner, Eli began to intensively study the link between life
 {{< column >}}
 
 <div class="description-table">
-	<img src="/images/ddle-1.jp" class="portrait">
+	<img src="/images/riddle-1.jp" class="portrait">
 	<div style="text-align:center;">
 		<i>Riddle</i>
 	</div>
