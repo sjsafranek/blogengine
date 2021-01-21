@@ -8,7 +8,8 @@ image: ""
 tags: ["character","player"]
 categories: []
 parties: []
-worlds: ["Call of the Dreamers"]
+campaigns: ["Call of the Dreamers"]
+worlds: ["Tomr Kingdom"]
 ---
 
 {{< columns >}}

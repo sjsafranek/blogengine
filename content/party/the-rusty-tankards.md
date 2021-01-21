@@ -8,6 +8,7 @@ image: ""
 tags: ["parties"]
 categories: []
 parties: ["The Rusty Tankards"]
+campaigns: []
 worlds: ["The Rusty Tankards"]
 ---
 

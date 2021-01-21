@@ -8,6 +8,7 @@ image: "/images/Emrakul-the-Promised-End.jpg"
 tags: ["character","non-player","titain"]
 categories: []
 parties: []
+campaigns: ["Arcons Breath"]
 worlds: ["Alarra"]
 ---
 

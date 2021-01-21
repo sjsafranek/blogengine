@@ -8,6 +8,7 @@ image: "/images/camay-underbow-1.jpg"
 tags: ["character","non-player"]
 categories: []
 parties: ["B Team"]
+campaigns: ["Laughing Curse"]
 worlds: ["Alarra"]
 ---
 

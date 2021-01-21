@@ -7,7 +7,8 @@ subtitle: "Awakened Undead (Skeleton), Ranger/Paladin"
 image: "/images/tinybones-sketch-1.jpg"
 tags: ["character","player"]
 categories: []
-parties: ["The Rusty Tankards"]
+parties: []
+campaigns: []
 worlds: ["The Rusty Tankards"]
 ---
 

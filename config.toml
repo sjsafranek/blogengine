@@ -68,56 +68,65 @@ canonifyurls = true
     weight = 1
 
 
+# [[menu.main]]
+#     name = "Worlds"
+#     url = "worlds/"
+#     weight = 2
+#
+# [[menu.main]]
+#     parent = "Worlds"
+#     name = "Alarra"
+#     url = "worlds/alarra"
+#     weight = 1
+#
+# [[menu.main]]
+#     parent = "Worlds"
+#     name = "Call of the Dreamers"
+#     url = "worlds/call-of-the-dreamers"
+#     weight = 2
+#
+# [[menu.main]]
+#     parent = "Worlds"
+#     name = "Forgotten Realms"
+#     url = "worlds/forgotten-realms"
+#     weight = 3
+#
+# [[menu.main]]
+#     parent = "Worlds"
+#     name = "The Rusty Tankards"
+#     url = "worlds/the-rusty-tankards"
+#     weight = 4
+#
+# [[menu.main]]
+#     parent = "Worlds"
+#     name = "Twilight Isle"
+#     url = "worlds/twilight-isle"
+#     weight = 5
+
 [[menu.main]]
     name = "Worlds"
-    url = "worlds/"
+    url = "worlds"
     weight = 2
-
-[[menu.main]]
-    parent = "Worlds"
-    name = "Alarra"
-    url = "worlds/alarra"
-    weight = 1
-
-[[menu.main]]
-    parent = "Worlds"
-    name = "Call of the Dreamers"
-    url = "worlds/call-of-the-dreamers"
-    weight = 2
-
-[[menu.main]]
-    parent = "Worlds"
-    name = "Forgotten Realms"
-    url = "worlds/forgotten-realms"
-    weight = 3
-
-[[menu.main]]
-    parent = "Worlds"
-    name = "The Rusty Tankards"
-    url = "worlds/the-rusty-tankards"
-    weight = 4
-
-[[menu.main]]
-    parent = "Worlds"
-    name = "Twilight Isle"
-    url = "worlds/twilight-isle"
-    weight = 5
-
 
 [[menu.main]]
     name = "Characters"
-    url = "characters/"
+    url = "characters"
     weight = 3
 
 [[menu.main]]
     name = "Parties"
     url = "parties"
-    weight = 3
+    weight = 4
+
+[[menu.main]]
+    name = "Campaigns"
+    url = "campaigns"
+    weight = 5
 
 [[menu.main]]
     name = "Tags"
     url = "tags"
-    weight = 3
+    weight = 6
 
 
 # [[menu.main]]
@@ -135,11 +144,12 @@ canonifyurls = true
 [[menu.main]]
     name = "Contact"
     url = "pages/contact"
-    weight = 5
+    weight = 10
 
 
 [taxonomies]
-    category = "categories"
     tag = "tags"
+    category = "categories"
+    campaigns = "campaigns"
     worlds = "worlds"
     parties = "parties"

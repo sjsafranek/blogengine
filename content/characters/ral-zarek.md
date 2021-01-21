@@ -8,6 +8,7 @@ image: "/images/ral-zarek-1.jpg"
 tags: ["character","player"]
 categories: []
 parties: ["A Team"]
+campaigns: ["Arcons Breath"]
 worlds: ["Alarra"]
 ---
 

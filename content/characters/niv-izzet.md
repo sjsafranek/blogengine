@@ -8,6 +8,7 @@ image: "/images/niv-izzet-1.jpg"
 tags: ["character","player"]
 categories: []
 parties: ["B Team"]
+campaigns: ["Laughing Curse"]
 worlds: ["Alarra"]
 ---
 

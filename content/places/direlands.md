@@ -5,9 +5,10 @@ type: ""
 date: 2021-01-20T19:34:40.870Z
 subtitle: ""
 image: ""
-tags: ["places"]
+tags: ["place"]
 categories: []
 parties: []
+campaigns: []
 worlds: ["Call of the Dreamers"]
 ---
 

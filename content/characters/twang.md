@@ -9,5 +9,6 @@ draft: true
 tags: ["character","player"]
 categories: []
 parties: ["B Team"]
+campaigns: ["Laughing Curse"]
 worlds: ["Alarra"]
 ---
