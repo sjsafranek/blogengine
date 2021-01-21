@@ -16,7 +16,7 @@ tags: ["character"]
 
 <div class="description-table">
 
-
+<img src="/images/tinybones-sketch-1.jpg" class="portrait">
 
 |                   |                     |
 | ----------------- | -------------------:|
