@@ -76,39 +76,43 @@ canonifyurls = true
 [[menu.main]]
     parent = "Worlds"
     name = "Alarra"
-    url = "world/alarra"
+    url = "worlds/alarra"
     weight = 1
 
 [[menu.main]]
     parent = "Worlds"
     name = "Call of the Dreamers"
-    url = "world/call-of-the-dreamers"
+    url = "worlds/call-of-the-dreamers"
     weight = 2
 
 [[menu.main]]
     parent = "Worlds"
     name = "Forgotten Realms"
-    url = "world/forgotten-realms"
+    url = "worlds/forgotten-realms"
     weight = 3
 
 [[menu.main]]
     parent = "Worlds"
     name = "The Rusty Tankards"
-    url = "world/the-rusty-tankards"
+    url = "worlds/the-rusty-tankards"
     weight = 4
 
 [[menu.main]]
     parent = "Worlds"
     name = "Twilight Isle"
-    url = "world/twilight-isle"
+    url = "worlds/twilight-isle"
     weight = 5
 
+
+[[menu.main]]
+    name = "Characters"
+    url = "characters/"
+    weight = 3
 
 [[menu.main]]
     name = "Parties"
     url = "parties"
     weight = 3
-
 
 [[menu.main]]
     name = "Tags"
@@ -139,4 +143,3 @@ canonifyurls = true
     tag = "tags"
     worlds = "world"
     parties = "parties"
-    places = "places"
