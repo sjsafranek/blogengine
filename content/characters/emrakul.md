@@ -5,7 +5,7 @@ type: ""
 date: 2020-03-13T17:43:31-07:00
 subtitle: "The Promised End"
 image: "/images/Emrakul-the-Promised-End.jpg"
-tags: ["character","non-player","titain"]
+tags: ["character","non-player","deity"]
 categories: []
 parties: []
 campaigns: ["Arcons Breath"]
@@ -14,7 +14,7 @@ worlds: ["Alarra"]
 
 {{< columns >}}
 
-[Emrakul](/TODO) is able to extend her metaphysical presence into the outer and lesser planes. [Emrakul](/TODO) is able to influence beings in the Material plane by distorting their perception of reality, although this is extremely rare. She often takes the from as an elven maiden in the minds of her servants, and is able to grant them the ability to tap into the arcane magics. Her followers consist primarily of Warlocks, fanatic Clerics, and [Tieflings](/TODO).
+[Emrakul](/TODO) is able to extend her metaphysical presence into the outer and lesser planes. Emrakul is able to influence beings in the Material plane by distorting their perception of reality, although this is extremely rare. She often takes the from as an elven maiden in the minds of her servants, and is able to grant them the ability to tap into the arcane magics. Her followers consist primarily of warlocks, fanatic clerics, and tieflings.
 
 {{< column >}}
 

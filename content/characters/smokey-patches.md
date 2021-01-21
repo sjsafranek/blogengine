@@ -9,7 +9,7 @@ tags: ["character","player"]
 categories: []
 parties: ["The Rusty Tankards"]
 campaigns: ["The Band Goes on Tour"]
-worlds: ["The Rusty Tankards"]
+worlds: ["Eberus"]
 ---
 
 {{< columns >}}

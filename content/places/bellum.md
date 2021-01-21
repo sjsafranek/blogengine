@@ -9,7 +9,7 @@ tags: ["place"]
 categories: []
 parties: []
 campaigns: ["Call of the Dreamers"]
-worlds: ["Tomr Kingdom"]
+worlds: ["Tómr Kingdom"]
 ---
 
 # Bellum

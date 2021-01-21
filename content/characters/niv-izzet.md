@@ -74,7 +74,7 @@ During his time at the university Niv helped uncover an ancient tomb that once b
 
 Part time teaching position as a potions professor at Galazaar's Adventurers Academy.
 
-Group of companions from the Galazaar's Adventurers Academy: Jack, Twang, Gorethrial, and Merial.
+Group of companions from the Galazaar's Adventurers Academy: [Jack](/characters/jack), [Twang](/characters/twang), [Gorethrial](/characters/gorethrial), and [Merial](/characters/merial).
 
 {{< column >}}
 
@@ -104,11 +104,12 @@ After a full life of adventuring Niv and [Camay](/characters/camay-underbow) set
 
 ## Relationships
 
- - Jack
- - Twang
+ - [Jack](/characters/jack)
+ - [Twang](/characters/twang)
  - [Gorethrial Devosillia](/characters/gorethrial-devosillia)
- - Merial
+ - [Merial](/characters/merial)
  - [Camay Underbow](/characters/camay-underbow)
+ - Alabaster Izzet
 
 
 ## Books

@@ -8,8 +8,8 @@ image: "/images/dr-eli-blackwell-1.jpg"
 tags: ["character","player"]
 categories: []
 parties: []
-campaigns: []
-worlds: ["Forgotten Realms"]
+campaigns: ["Forgotten Realms"]
+worlds: ["Faerûn"]
 ---
 
 {{< columns >}}

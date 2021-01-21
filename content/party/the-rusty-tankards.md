@@ -8,8 +8,8 @@ image: ""
 tags: ["parties"]
 categories: []
 parties: ["The Rusty Tankards"]
-campaigns: []
-worlds: ["The Rusty Tankards"]
+campaigns: ["The Band Goes on Tour"]
+worlds: ["Eberus"]
 ---
 
 

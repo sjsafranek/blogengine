@@ -8,8 +8,8 @@ image: ""
 tags: ["song"]
 categories: []
 parties: ["The Rusty Tankards"]
-campaigns: []
-worlds: ["The Rusty Tankards"]
+campaigns: ["The Band Goes on Tour"]
+worlds: ["Eberus"]
 ---
 
 G &nbsp; &nbsp; &nbsp; &nbsp; D &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; A
