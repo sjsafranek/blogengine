@@ -5,7 +5,9 @@ type: ""
 date: 2020-07-05T12:21:31-07:00
 subtitle: "Fairy, Cleric"
 image: "/images/mulberry-sparklestream-1.jpg"
-tags: ["character"]
+tags: ["character","player"]
+categories: []
+parties: []
 worlds: ["Twilight Isle"]
 ---
 
@@ -36,7 +38,6 @@ Character Sheet: https://ddb.ac/characters/31438685/6rJYxH
 
 
 
-
 ## Early Life
 
 Mul was born and raised in the Feywild like all fairy folk. While it is common knowledge amongst fairies, they don’t have “parents” in the traditional sense. Legend states that the Summer Queen (Titania, Archfey) planted the ancient bitterblossom trees all across the realm. It is from these trees that all fairies are birthed, growing in flower-like pods. Once these pods open, the newborn fairies are adopted by fairy communities from all over the multiverse (after all, it takes a village). Mul was adopted by the Plumfoam Empire, lying at the heart of the Fairy Godmother’s realm, within the Feywild.
@@ -45,12 +46,9 @@ From an early age it was clear that Mul didn’t “fit in”. While the rest of
 
 
 
-
 ## Fairy Godmother & The Material Plane
 
 Despite Mul’s attitude the Fairy Godmother took a liking to him. One day the Fairy God Mother went to visit him:
-
-
 
 
 

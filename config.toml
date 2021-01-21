@@ -73,41 +73,41 @@ canonifyurls = true
     url = "worlds/"
     weight = 2
 
-# [[menu.main]]
-#     parent = "Worlds"
-#     name = "Alarra"
-#     url = "worlds/alarra"
-#     weight = 1
-#
-# [[menu.main]]
-#     parent = "Worlds"
-#     name = "Call of the Dreamers"
-#     url = "worlds/call-of-the-dreamers"
-#     weight = 2
-#
-# [[menu.main]]
-#     parent = "Worlds"
-#     name = "Forgotten Realms"
-#     url = "worlds/forgotten-realms"
-#     weight = 3
-#
-# [[menu.main]]
-#     parent = "Worlds"
-#     name = "The Rusty Tankards"
-#     url = "worlds/the-rusty-tankards"
-#     weight = 4
+[[menu.main]]
+    parent = "Worlds"
+    name = "Alarra"
+    url = "worlds/alarra"
+    weight = 1
+
+[[menu.main]]
+    parent = "Worlds"
+    name = "Call of the Dreamers"
+    url = "worlds/call-of-the-dreamers"
+    weight = 2
+
+[[menu.main]]
+    parent = "Worlds"
+    name = "Forgotten Realms"
+    url = "worlds/forgotten-realms"
+    weight = 3
+
+[[menu.main]]
+    parent = "Worlds"
+    name = "The Rusty Tankards"
+    url = "worlds/the-rusty-tankards"
+    weight = 4
 
 [[menu.main]]
     parent = "Worlds"
     name = "Twilight Isle"
-    url = "worlds/Twilight Isle"
+    url = "worlds/twilight-isle"
     weight = 5
 
-# [[menu.main]]
-#     parent = "Worlds"
-#     name = "Twilight Isle"
-#     url = "worlds/twilight-isle"
-#     weight = 5
+
+[[menu.main]]
+    name = "Parties"
+    url = "parties"
+    weight = 3
 
 
 [[menu.main]]
@@ -116,10 +116,10 @@ canonifyurls = true
     weight = 3
 
 
-[[menu.main]]
-    name = "Categories"
-    url = "categories"
-    weight = 4
+# [[menu.main]]
+#     name = "Categories"
+#     url = "categories"
+#     weight = 4
 
 
 # [[menu.main]]
@@ -138,3 +138,4 @@ canonifyurls = true
     category = "categories"
     tag = "tags"
     worlds = "worlds"
+    parties = "parties"
