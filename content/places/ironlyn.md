@@ -8,8 +8,8 @@ image: ""
 tags: ["place"]
 categories: []
 parties: []
-campaigns: []
-worlds: ["Call of the Dreamers"]
+campaigns: ["Call of the Dreamers"]
+worlds: ["Tomr Kingdom"]
 ---
 
 # Ironlyn
