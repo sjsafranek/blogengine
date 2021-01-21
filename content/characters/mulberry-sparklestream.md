@@ -8,6 +8,7 @@ image: "/images/mulberry-sparklestream-1.jpg"
 tags: ["character","player"]
 categories: []
 parties: []
+campaigns: ["Twilight Isle"]
 worlds: ["Twilight Isle"]
 ---
 
