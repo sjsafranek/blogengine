@@ -25,16 +25,18 @@ Grew up in Galazaar.
 |                   |                       |
 | ----------------- | ---------------------:|
 | <b>Race</b>       | Halfling	        |
-| <b>Class</b>      | Artificer (Alchemist) |
+| <b>Class</b>      | Artificer (Armorer) |
 | <b>Background</b> | -                  |
-| <b>Alignment</b>  | Chaotic Good          |
+| <b>Alignment</b>  | Good          |
 
 </div>
 
 {{< endcolumns >}}
 
+
 ### Laughing Curse
-Camay Underbow
+
 
 ## Izzet's Worldly Elixirs
-After a full life of adventuring Niv and Camay settled down and founded Izzet's Worldly Elixirs which supplies much of Arcona, Amarton, and Zephra with potions.
+
+After a full life of adventuring [Niv Izzet](/worlds/alarra/characters/niv-izzet) and Camay settled down and founded Izzet's Worldly Elixirs which supplies much of Arcona, Amarton, and Zephra with potions.
