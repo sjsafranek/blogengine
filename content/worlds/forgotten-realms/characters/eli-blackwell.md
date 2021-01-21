@@ -56,16 +56,16 @@ When Eli, was of age, he was accepted into Waterdeep’s School of Medicine. Tho
 
 {{< columns >}}
 
-    While working as a coroner, Eli began to intensively study the link between life and death and there entwined energies, viewing it at a means to truly understand life and how to preserve it. Most people tend to be put off by the fact he spends much of his time around the deceased, which leaves him feeling pretty lonely. One day, using the knowledge he had obtained through his studies, he worked up the courage and resurrected Leonard. Leonard is Eli's zombie bestie. Leonard helps Eli with autopsies and never leaves his side.
+While working as a coroner, Eli began to intensively study the link between life and death and there entwined energies, viewing it at a means to truly understand life and how to preserve it. Most people tend to be put off by the fact he spends much of his time around the deceased, which leaves him feeling pretty lonely. One day, using the knowledge he had obtained through his studies, he worked up the courage and resurrected Leonard. Leonard is Eli's zombie bestie. Leonard helps Eli with autopsies and never leaves his side.
 
 {{< column >}}
 
-    <div class="description-table">
-    	<img src="/images/ddle-1.jp" class="portrait">
-    	<div style="text-align:center;">
-    		<i>Riddle</i>
-    	</div>
-    </div>
+<div class="description-table">
+	<img src="/images/ddle-1.jp" class="portrait">
+	<div style="text-align:center;">
+		<i>Riddle</i>
+	</div>
+</div>
 
 {{< endcolumns >}}
 

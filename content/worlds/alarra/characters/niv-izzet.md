@@ -64,18 +64,18 @@ During his time at the university Niv helped uncover an ancient tomb that once b
 
 {{< columns >}}
 
-	Part time teaching position as a potions professor at Galazaar's Adventurers Academy.
+Part time teaching position as a potions professor at Galazaar's Adventurers Academy.
 
-	Group of companions from the Galazaar's Adventurers Academy: Jack, Twang, Gorethrial, and Merial.
+Group of companions from the Galazaar's Adventurers Academy: Jack, Twang, Gorethrial, and Merial.
 
 {{< column >}}
 
-	<div class="description-table">
-		<img src="/images/niv-izzet-sketch-1.jpg" class="portrait">
-		<div style="text-align:center;">
-			<i>Niv Izzet</i>
-		</div>
+<div class="description-table">
+	<img src="/images/niv-izzet-sketch-1.jpg" class="portrait">
+	<div style="text-align:center;">
+		<i>Niv Izzet</i>
 	</div>
+</div>
 
 {{< endcolumns >}}
 
