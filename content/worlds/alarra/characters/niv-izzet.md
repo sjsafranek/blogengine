@@ -6,6 +6,7 @@ date: 2020-03-09T16:03:13-07:00
 subtitle: "Gnome, Artificer"
 image: "/images/niv-izzet-1.jpg"
 tags: ["Alarra", "character", "B Team"]
+categories: ["character"]
 ---
 
 {{< columns >}}

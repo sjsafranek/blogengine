@@ -53,7 +53,7 @@ Despite Mul’s attitude the Fairy Godmother took a liking to him. One day the F
 
 
 
-> FAIRY GODMOTHER floats down from the sky with a beam of sunlight piercing through the tree canopy illuminating her fairy dust. Yellow-orange butterfly wings outstretched and hair the color of cotton candy spiralling up towards the sky.
+> FAIRY GODMOTHER floats down from the sky with a beam of sunlight piercing through the tree canopy illuminating her fairy dust. Yellow-orange butterfly wings outstretched and hair the color of cotton candy spiraling up towards the sky.
 
 > FAIRY GODMOTHER <br>
 > (With a radiant smile) <br>
@@ -131,4 +131,6 @@ Mulberry doesn’t remember why he ended up on the Cordelia. Could it have been 
 
 
 ## Relationships
-Drinking buddy with [Gimble Kadwick](/worlds/call-of-the-dreamers/characters/gimble-kadwick)
+
+ - Fairy Godmother
+ - Drinking buddy with [Gimble Kadwick](/worlds/call-of-the-dreamers/characters/gimble-kadwick)

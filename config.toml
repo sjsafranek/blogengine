@@ -120,3 +120,10 @@ canonifyurls = true
     name = "Contact"
     url = "pages/contact"
     weight = 5
+
+
+
+
+[taxonomies]
+    category = "categories"
+    tag = "tags"
