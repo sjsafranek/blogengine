@@ -2,7 +2,7 @@
 title: "Finkle Goldberry"
 author: "Stefan Safranek"
 type: ""
-date: 2019-05-23T17:43:31-07:00
+date: 2019-08-23T17:43:31-07:00
 subtitle: "Gnome, Artificer"
 image: "/images/Finkle-Goldberry.jpg"
 tags: ["character","non-player"]
