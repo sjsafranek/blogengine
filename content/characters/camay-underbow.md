@@ -2,7 +2,7 @@
 title: "Camay Underbow"
 author: "Stefan Safranek"
 type: ""
-date: 2020-03-13T17:43:31-07:00
+date: 2018-03-13T17:43:31-07:00
 subtitle: "Halfing, Artificer"
 image: "/images/camay-underbow-1.jpg"
 tags: ["character","non-player"]
@@ -26,12 +26,12 @@ Grew up in Galazaar.
 
 <img src="/images/camay-underbow-1.jpg" class="portrait">
 
-|                   |                       |
-| ----------------- | ---------------------:|
-| <b>Race</b>       | Halfling	        |
+|                   |                     |
+| ----------------- | -------------------:|
+| <b>Race</b>       | Halfling	          |
 | <b>Class</b>      | Artificer (Armorer) |
-| <b>Background</b> | -                  |
-| <b>Alignment</b>  | Good          |
+| <b>Background</b> | -                   |
+| <b>Alignment</b>  | Good                |
 
 </div>
 

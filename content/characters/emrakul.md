@@ -2,7 +2,7 @@
 title: "Emrakul"
 author: "Stefan Safranek"
 type: ""
-date: 2020-03-13T17:43:31-07:00
+date: 2018-04-07T17:43:31-07:00
 subtitle: "The Promised End"
 image: "/images/Emrakul-the-Promised-End.jpg"
 tags: ["character","non-player","deity"]
@@ -24,12 +24,12 @@ worlds: ["Alarra"]
 
 <img src="/images/Emrakul-the-Promised-End.jpg" class="portrait">
 
-|                   |                       |
-| ----------------- | ---------------------:|
-| <b>Race</b>       | Unknown	        |
+|                   |         |
+| ----------------- | -------:|
+| <b>Race</b>       | Unknown |
 | <b>Class</b>      | Unknown |
-| <b>Background</b> | -                  |
-| <b>Alignment</b>  | Evil          |
+| <b>Background</b> | -       |
+| <b>Alignment</b>  | Evil    |
 
 </div>
 

@@ -2,7 +2,7 @@
 title: "Ral Zarek"
 author: "Stefan Safranek"
 type: ""
-date: 2020-03-13T18:03:45-07:00
+date: 2018-01-11T18:03:45-07:00
 subtitle: "Tiefling, Warlock"
 image: "/images/ral-zarek-1.jpg"
 tags: ["character","player"]

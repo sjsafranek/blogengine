@@ -14,7 +14,7 @@ worlds: ["Twilight Isle"]
 
 {{< columns >}}
 
-Mul hates being a fairy. He hates every damned thing about it. From the extreme happiness, obsession over sweets, to the thin cloud of fairy dust following him around, he absolutely despises it all…
+Mulberry (Mul) hates being a fairy. He hates every damned thing about it. From the extreme happiness, obsession over sweets, to the thin cloud of fairy dust following him around, he despises it all…
 
 Character Sheet: https://ddb.ac/characters/31438685/6rJYxH
 
@@ -26,12 +26,12 @@ Character Sheet: https://ddb.ac/characters/31438685/6rJYxH
 
 <img src="/images/mulberry-sparklestream-1.jpg" class="portrait">
 
-|                   |                     |
-| ----------------- | -------------------:|
-| <b>Race</b>       | Fairy (Pixie)       |
-| <b>Class</b>      | Cleric (Trickster)  |
-| <b>Background</b> | Acolyte             |
-| <b>Alignment</b>  | Chaotic Good        |
+|                   |                    |
+| ----------------- | ------------------:|
+| <b>Race</b>       | Fairy (Pixie)      |
+| <b>Class</b>      | Cleric (Trickster) |
+| <b>Background</b> | Acolyte            |
+| <b>Alignment</b>  | Chaotic Good       |
 
 </div>
 
@@ -43,7 +43,7 @@ Character Sheet: https://ddb.ac/characters/31438685/6rJYxH
 
 Mul was born and raised in the Feywild like all fairy folk. While it is common knowledge amongst fairies, they don’t have “parents” in the traditional sense. Legend states that the Summer Queen (Titania, Archfey) planted the ancient bitterblossom trees all across the realm. It is from these trees that all fairies are birthed, growing in flower-like pods. Once these pods open, the newborn fairies are adopted by fairy communities from all over the multiverse (after all, it takes a village). Mul was adopted by the Plumfoam Empire, lying at the heart of the Fairy Godmother’s realm, within the Feywild.
 
-From an early age it was clear that Mul didn’t “fit in”. While the rest of Plumfoam was in a near perpetual state of celebration, Mul thought this was pathologically absurd. What could possibly be so extraordinary that one would feel compelled to celebrate to that degree… let alone an entire fucking kingdom?! His negative attitude caused him to clash with other members of the community, making him a sort of “outcast” (to whatever degree is possible for living in a super accepting and overly inclusive community).
+From an early age it was clear that Mul didn’t quite “fit in”. While the rest of Plumfoam was in a near perpetual state of celebration, Mul thought this was pathologically absurd. What could possibly be so extraordinary that one would feel compelled to celebrate to that degree… let alone an entire fucking kingdom?! His negative attitude caused him to clash with other members of the community, making him a sort of “outcast” (to whatever degree is possible for living in a super accepting and overly inclusive community).
 
 
 

@@ -24,12 +24,12 @@ Character Sheet: https://ddb.ac/characters/43041439/QQfop1
 
 <img src="/images/" class="portrait">
 
-|                   |                       |
-| ----------------- | ---------------------:|
-| <b>Race</b>       | Gnome (Rock)	        |
-| <b>Class</b>      | Artificer (Alchemist) |
+|                   |                                |
+| ----------------- | ------------------------------:|
+| <b>Race</b>       | Gnome (Rock)	                 |
+| <b>Class</b>      | Artificer (Alchemist)          |
 | <b>Background</b> | Guild Artisan / Guild Merchant |
-| <b>Alignment</b>  | Chaotic Good          |
+| <b>Alignment</b>  | Chaotic Good                   |
 
 </div>
 
@@ -44,7 +44,7 @@ And then there are the dwarven ales with their beautiful and rich amber-brown co
 
 Orcish whiskey is strong enough to grow a full beard on any fair-maiden. If not careful it’ll knock you straight onto your ass, lest you belong to the orcish persuasion. The halflings have their mead, and the gnomes... gnomes... now what do the gnomes have? Some would say the gnomes are too busy with their trinkets and things. Perhaps they are more fond of stimulants such as caffeine or saliva of the majestic aquivark falcon. Whatever it may be, the gnomes really don’t have a spirit of their own; that’s what brings us to the great Gimble Kadwick.
 
-Gimble was born in the town of [Ironlyn](/places/ironlyn), to the gnomish clockmaker Seebo Kadwick. Rumor has it that his ma had dumped him off with the poor bastard and ran away with some fancy pants lord from [Kingsfall](/places/kingsfall). Seebo never stood a chance. Seebo always wanted to see his son follow in his footsteps. Perhaps one day inheriting the family businesses, Kadwick’s Archive of Temporal Tickers. Unfortunately for Seebo, Gimble had other ambitions.
+Gimble was born in the town of [Ironlyn](/places/ironlyn), to the gnomish clockmaker Seebo Kadwick. Rumor has it that his ma had dumped him off with the poor bastard and ran away with some fancy pants lord from [Kingsfall](/places/kingsfall). Seebo never stood a chance. He always wanted to see his son follow in his footsteps. Perhaps even one day inheriting the family businesses, [Kadwick’s Archive of Temporal Tickers](TODO). Unfortunately for Seebo, Gimble had other ambitions.
 
 Once Gimble got a hold of the famous [Professor Izzet’s](/characters/niv-izzet) book, “Coalescing Concoctions and Other Brews”, he was hooked! Gimble swore that he would be the one to introduce the world’s first true gnomish spirit. He packed up his things and moved to [Bellum](/places/bellum) to begin his training with the infamous brewers guild, Tómr Federation of Zymologists (aka TFZ).
 

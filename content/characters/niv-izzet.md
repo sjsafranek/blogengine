@@ -2,7 +2,7 @@
 title: "Niv Izzet"
 author: "Stefan Safranek"
 type: ""
-date: 2020-03-09T16:03:13-07:00
+date: 2019-07-12T16:03:13-07:00
 subtitle: "Gnome, Artificer"
 image: "/images/niv-izzet-1.jpg"
 tags: ["character","player"]

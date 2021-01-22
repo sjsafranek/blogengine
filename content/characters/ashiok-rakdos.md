@@ -15,7 +15,7 @@ worlds: ["Alarra"]
 
 {{< columns >}}
 
-Being raised in [Dhuros](/kingdoms/dhuros), and groomed for the battlefield it is a rare occurrence when something strikes fear in [Ashiok](/characters/pcs/ashiok_rakdos). Ashiok is "Fearless" almost to a fault, over confident and stubborn. Rarely ask others for help. Erratic and impulsive when angry.
+Being raised in [Dhuros](/places/dhuros), and groomed for the battlefield it is a rare occurrence when something strikes fear in Ashiok. Ashiok is "Fearless" almost to a fault, over confident and stubborn. Rarely ask others for help. Erratic and impulsive when angry.
 
 
 Although Ashiok is slow to trust others. Extremely loyal to his fellow companions.
@@ -42,12 +42,12 @@ Enjoys company of “small-lings” and children. He finds that they bring joy i
 
 <img src="/images/ashiok_rakdos.jpg" class="portrait">
 
-|                   |                       |
-| ----------------- | ---------------------:|
-| <b>Race</b>       | Dragonborn	            |
-| <b>Class</b>      | Fighter               |
-| <b>Background</b> | Soldier             |
-| <b>Alignment</b>  | Chaotic Good          |
+|                   |              |
+| ----------------- | ------------:|
+| <b>Race</b>       | Dragonborn   |
+| <b>Class</b>      | Fighter      |
+| <b>Background</b> | Soldier      |
+| <b>Alignment</b>  | Chaotic Good |
 
 </div>
 

@@ -24,12 +24,12 @@ One of the most renowned tinker gnomes
 
 <img src="/images/Finkle-Goldberry.jpg" class="portrait">
 
-|                   |                       |
-| ----------------- | ---------------------:|
-| <b>Race</b>       | Gnome	        |
+|                   |                     |
+| ----------------- | -------------------:|
+| <b>Race</b>       | Gnome	              |
 | <b>Class</b>      | Artificer (Armorer) |
-| <b>Background</b> | -                  |
-| <b>Alignment</b>  | Chaotic Good          |
+| <b>Background</b> | -                   |
+| <b>Alignment</b>  | Chaotic Good        |
 
 </div>
 

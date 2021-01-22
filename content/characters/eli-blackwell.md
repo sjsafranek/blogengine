@@ -16,9 +16,11 @@ worlds: ["Faerûn"]
 
 Eli is a well dressed forest gnome with peppered grey and black hair.
 
-Enjoys tea
+Enjoys tea.
+
 Mannerisms polite by shy and nervous
-Desires to help people less fortunate
+
+Desires to help people less fortunate.
 
 Often seen with his "friends" Leonard, Leopold, Riddle and Raddle
 
