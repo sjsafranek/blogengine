@@ -48,7 +48,7 @@ Eli grew up in the small gnomish village of Elderbrook, nestled in the Misty For
 
 <img src="/images/misty-forest_forgotten-realms_map.png" class="portrait">
 
-Dr. Burton Blackwell, Eli's father, was Elderbrook's town doctor. Eli was fascinated by everything anatomy and physiology and loved helping his father. Eli mostly helped his father by jotting down notes and preforming simple procedures.
+Dr. Burton Blackwell, Eli's father, was Elderbrook's town doctor. Eli was fascinated by everything anatomy and physiology and loved helping his father. Eli helped out by jotting down notes and preforming simple procedures.
 
 
 ### The Long Winter
