@@ -4,7 +4,7 @@ author: "Stefan Safranek"
 type: ""
 date: 2021-01-22T19:30:34.694Z
 subtitle: "Efreeti"
-image: "/images/yemnazi-portrait-1.png"
+image: "/images/yemnazi-portrait-2.png"
 tags: ["character","non-player"]
 categories: []
 parties: []

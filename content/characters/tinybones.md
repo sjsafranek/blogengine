@@ -34,7 +34,7 @@ Once a brave and valiant knight from the Kingdom of Galinor, he is now but a she
 {{< endcolumns >}}
 
 
-## Jesper's Undead Awakening
+## The Transformation
 
 120 years ago, while on a quest for the king, a knight by the name of Sir Jesper the Champion came across a jet black oil lamp. This lamp was covered in strange arcane runes that seemed to glow in the fire light. Jesper became captivated by this object. He became obsessed. Fearing that one of his fellow knights would steal it from him, he set off across the [Yaebetan](/places/yaebet) desert. He could feel the power that surged within the lamp, the power desired to be free.
 
@@ -82,6 +82,8 @@ Knowing that the road ahead could be dangerous for the young gnome, Jesper offer
 
 
 
+
 ## Relationships
 
- - [Eli Blackwell](/characters/eli-blackwell)
+ - [Dr. Eli Blackwell](/characters/eli-blackwell)
+ - [Yemnazi (The Wicked)](/characters/yemnazi-the-wicked)
