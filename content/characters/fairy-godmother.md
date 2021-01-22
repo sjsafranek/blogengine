@@ -15,7 +15,7 @@ worlds: ["Twilight Isle"]
 {{< columns >}}
 
 
-The Fairy Godmother
+The Fairy Godmother rules over the faerie folk of the feywild. The center of her kingdom lies at the heart of the Plumfoam Empire.
 
 
 {{< column >}}
