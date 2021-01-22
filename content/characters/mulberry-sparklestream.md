@@ -132,5 +132,5 @@ Mulberry doesn’t remember why he ended up on the Cordelia. Could it have been 
 
 ## Relationships
 
- - Fairy Godmother
+ - [Fairy Godmother](/characters/fairy-godmother)
  - Drinking buddy with [Gimble Kadwick](/worlds/call-of-the-dreamers/characters/gimble-kadwick)
