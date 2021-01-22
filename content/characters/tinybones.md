@@ -38,9 +38,9 @@ Once a brave and valiant knight from the Kingdom of Galinor, he is now but a she
 
 120 years ago, while on a quest for the king, a knight by the name of Sir Jesper the Champion came across a jet black oil lamp. This lamp was covered in strange arcane runes that seemed to glow in the fire light. Jesper became captivated by this object. He became obsessed. Fearing that one of his fellow knights would steal it from him, he set off across the [Yaebetan](/places/yaebet) desert. He could feel the power that surged within the lamp, the power desired to be free.
 
-One night, as Jesper gazed upon the lamp, an efreeti by the name of [Yemnazi (The Wicked)](/characters/yemnazi) appeared before him.
+One night, as Jesper gazed upon the lamp, an efreeti by the name of [Yemnazi (The Wicked)](/characters/yemnazi-the-wicked) appeared before him.
 
-"You have done well Jesper", [Yemnazi](/characters/yemnazi) said quietly. "I shall grant you power beyond your wildest desires! Wealth beyond your dream of dreams. I shall grant you, one wish."
+"You have done well Jesper", [Yemnazi](/characters/yemnazi-the-wicked) said quietly. "I shall grant you power beyond your wildest desires! Wealth beyond your dream of dreams. I shall grant you, one wish."
 
 The excitement began to stir. Think of the possibilities!?! Thoughts of glory and conquest raced through Jesper's mind.
 
@@ -48,13 +48,13 @@ Eventually greed got the better of him. Jesper wished for immortality.
 
 "I wish to live beyond my years. Never fading to the sands of time."
 
-[Yemnazi](/characters/yemnazi) smiled coldly, "As you wish."
+[Yemnazi](/characters/yemnazi-the-wicked) smiled coldly, "As you wish."
 
 Dark flames began to kick up around Jesper's feet. Flames burning away his armor and heat searing his skin.
 
 "You tricked me foul beast!" Jesper yelled in agony. He tried swinging his sword but it was too late.
 
-[Yemnazi](/characters/yemnazi) laughing, "Everything of value, comes with a cost..."
+[Yemnazi](/characters/yemnazi-the-wicked) laughing, "Everything of value, comes with a cost..."
 
 The fires climbed up his body. Burning away his flesh. Burning away the muscle and other tissue, leaving nothing but the charred skeletal remains you see today.
 
