@@ -25,8 +25,6 @@ Yemnazi is an evil Efreeti from [Yaebet](/places/yaebet). She is rumored to offe
 |                   |             |
 | ----------------- | -----------:|
 | <b>Race</b>       | Efreeti     |
-| <b>Class</b>      |             |
-| <b>Background</b> |             |
 | <b>Alignment</b>  | Lawful Evil |
 
 </div>

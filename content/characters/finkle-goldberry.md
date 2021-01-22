@@ -28,7 +28,6 @@ One of the most renowned tinker gnomes
 | ----------------- | -------------------:|
 | <b>Race</b>       | Gnome	              |
 | <b>Class</b>      | Artificer (Armorer) |
-| <b>Background</b> | -                   |
 | <b>Alignment</b>  | Chaotic Good        |
 
 </div>
