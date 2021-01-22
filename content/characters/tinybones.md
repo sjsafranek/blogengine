@@ -70,7 +70,6 @@ Over time he began to notice little things that he had never noticed before. A s
 One day a gnome by the name of [Eli Blackwell](/characters/eli-blackwell) came across Jesper's path.
 
 
-
 ## Relationships
 
  - [Eli Blackwell](/characters/eli-blackwell)

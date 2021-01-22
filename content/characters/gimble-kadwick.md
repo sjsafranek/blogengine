@@ -47,7 +47,7 @@ Orcish whiskey is strong enough to grow a full beard on any fair-maiden. If not 
 
 Gimble was born in the town of Ironlyn, to the gnomish clockmaker Seebo Kadwick. Rumor has it that his ma had dumped him off with the poor bastard and ran away with some fancy pants lord from Kingsfall. Seebo never stood a chance. Seebo always wanted to see his son follow in his footsteps. Perhaps one day inheriting the family businesses, Kadwick’s Archive of Temporal Tickers. Unfortunately for Seebo, Gimble had other ambitions.
 
-Once Gimble got a hold of the famous [Professor Izzet’s](/characters/niv-izzet) book, “Coalescing Concoctions and Other Brews”, he was hooked! Gimble swore that he would be the one to introduce the world’s first true gnomish spirit. He packed up his things and moved to Bellum to begin his training with the infamous brewers guild, Tomr Federation of Zymologists (aka TFZ).
+Once Gimble got a hold of the famous [Professor Izzet’s](/characters/niv-izzet) book, “Coalescing Concoctions and Other Brews”, he was hooked! Gimble swore that he would be the one to introduce the world’s first true gnomish spirit. He packed up his things and moved to Bellum to begin his training with the infamous brewers guild, Tómr Federation of Zymologists (aka TFZ).
 
 Sure Gimble was a natural at alchemy. They say he could whip up a Bubbly Fogweed Potion  using nothing but flogs wort, harpy spit and fading brittlebush. But what do gnomes really know  about the subtle sciences of alcohol?
 
@@ -56,4 +56,4 @@ Our story begins after an evening of excessive alcohol consumption...
 
 ## Relationships
 
-Drinking buddy with [Mulberry Sparklestream](/characters/mulberry-sparklestream)
+ - Drinking buddy with [Mulberry Sparklestream](/characters/mulberry-sparklestream)
