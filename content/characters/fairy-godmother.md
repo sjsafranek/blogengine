@@ -5,7 +5,7 @@ type: ""
 date: 2020-07-05T12:24:31-07:00
 subtitle: "Fairy, Cleric"
 image: "/images/fairy-godmother-1.jpg"
-tags: ["character","player"]
+tags: ["character","non-player","deity"]
 categories: []
 parties: []
 campaigns: ["Twilight Isle"]
