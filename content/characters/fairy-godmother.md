@@ -4,7 +4,7 @@ author: "Stefan Safranek"
 type: ""
 date: 2020-07-05T12:24:31-07:00
 subtitle: "Fairy, Cleric"
-image: "/images/fairy-godmother-1.jpg"
+image: "/images/fairy-godmother-portrait-1.jpg"
 tags: ["character","non-player","deity"]
 categories: []
 parties: []
