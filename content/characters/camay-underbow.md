@@ -44,3 +44,9 @@ Grew up in Galazaar.
 ## Izzet's Worldly Elixirs
 
 After a full life of adventuring [Niv Izzet](/characters/niv-izzet) and Camay settled down and founded Izzet's Worldly Elixirs which supplies much of Arcona, Amarton, and Zephra with potions.
+
+
+## Relationships
+
+ - [Niv Izzet](/characters/niv-izzet)
+ - [Finkle Goldberry](/characters/finkle_goldberry)

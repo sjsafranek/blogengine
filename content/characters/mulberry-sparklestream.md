@@ -41,7 +41,7 @@ Character Sheet: https://ddb.ac/characters/31438685/6rJYxH
 
 ## Early Life
 
-Mul was born and raised in the Feywild like all fairy folk. While it is common knowledge amongst fairies, they don’t have “parents” in the traditional sense. Legend states that the Summer Queen (Titania, Archfey) planted the ancient bitterblossom trees all across the realm. It is from these trees that all fairies are birthed, growing in flower-like pods. Once these pods open, the newborn fairies are adopted by fairy communities from all over the multiverse (after all, it takes a village). Mul was adopted by the Plumfoam Empire, lying at the heart of the Fairy Godmother’s realm, within the Feywild.
+Mul was born and raised in the Feywild like all fairy folk. While it is common knowledge amongst fairies, they don’t have “parents” in the traditional sense. Legend states that the Summer Queen (Titania, Archfey) planted the ancient bitterblossom trees all across the realm. It is from these trees that all fairies are birthed, growing in flower-like pods. Once these pods open, the newborn fairies are adopted by fairy communities from all over the multiverse (after all, it takes a village). Mul was adopted by the Plumfoam Empire, lying at the heart of the [Fairy Godmother’s](/characters/fairy-godmother) realm, within the Feywild.
 
 From an early age it was clear that Mul didn’t quite “fit in”. While the rest of Plumfoam was in a near perpetual state of celebration, Mul thought this was pathologically absurd. What could possibly be so extraordinary that one would feel compelled to celebrate to that degree… let alone an entire fucking kingdom?! His negative attitude caused him to clash with other members of the community, making him a sort of “outcast” (to whatever degree is possible for living in a super accepting and overly inclusive community).
 
@@ -49,7 +49,7 @@ From an early age it was clear that Mul didn’t quite “fit in”. While the r
 
 ## Fairy Godmother & The Material Plane
 
-Despite Mul’s attitude the Fairy Godmother took a liking to him. One day the Fairy God Mother went to visit him:
+Despite Mul’s attitude the [Fairy Godmother](/characters/fairy-godmother) took a liking to him. One day the [Fairy Godmother](/characters/fairy-godmother) went to visit him:
 
 
 
@@ -114,7 +114,7 @@ Despite Mul’s attitude the Fairy Godmother took a liking to him. One day the F
 
 
 
-The Fairy Godmother blessed Mul and sent him off to travel distant lands in search of his ‘Joy’. Fairy Godmother led Mul to a clearing where the famous inventor Alabaster Izzet was waiting with his airship, “Helga the Great”. Helga set sail with Mul and planeshifted to the material plane.
+The [Fairy Godmother](/characters/fairy-godmother) blessed Mul and sent him off to travel distant lands in search of his ‘Joy’. [Fairy Godmother](/characters/fairy-godmother) led Mul to a clearing where the famous inventor [Alabaster Izzet](/characters/alabaster-izzet) was waiting with his airship, “Helga the Great”. Helga set sail with Mul and planeshifted to the material plane.
 
 The material plane was unlike the Feywild in almost every way. While every town Mul went to was much larger than he was used to, the atmosphere was calm. No hyper active towns folk prepping for the upcoming celebration. No obtrusive bright colors overwhelming your field of view. Just the sights and sounds of individuals going through the same old monotonous routine day in and day out. Mul found this extremely soothing and relaxing.
 

@@ -14,7 +14,7 @@ worlds: []
 
 {{< columns >}}
 
-Once a brave and valiant knight from the Kingdom of Galinor, he is now but a shell of his former self. Well... the "shell" is the piece that is missing. You see, this undead skeleton from beyond the grave seems frightening at first, but he is nothing more than a gentle giant. Never stopping to aid a creature in need.
+Once a brave and valiant knight from the [Kingdom of Galinor](/places/galinor), he is now but a shell of his former self. Well... the "shell" is the piece that is missing. You see, this undead skeleton from beyond the grave seems frightening at first, but he is nothing more than a gentle giant. Never stopping to aid a creature in need.
 
 {{< column >}}
 

@@ -109,7 +109,7 @@ After a full life of adventuring Niv and [Camay](/characters/camay-underbow) set
  - [Gorethrial Devosillia](/characters/gorethrial-devosillia)
  - [Merial](/characters/merial)
  - [Camay Underbow](/characters/camay-underbow)
- - Alabaster Izzet
+ - [Alabaster Izzet](/characters/alabaster-izzet)
 
 
 ## Books

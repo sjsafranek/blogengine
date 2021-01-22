@@ -50,3 +50,17 @@ He spent the rest of his young adulthood living on the streets, surviving off of
 ## A Team
 Horn
 [Milius Moores](/TODO) - "Free yourself from the dark ones influence, [Emrakul](/characters/emrakul) will return and take over, each time it gets worse."
+
+
+
+{{< columns >}}
+
+<div class="description-table">
+	<img src="/images/ral_as_trex-by_melissa.jpg" class="portrait">
+	<div style="text-align:center;">
+		<i>Ral polymorphed into a T-Rex</i>
+	</div>
+</div>
+
+{{< column >}}
+{{< endcolumns >}}
