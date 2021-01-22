@@ -63,20 +63,22 @@ The lamp was no where to be seen.
 
 ## Life of Seclusion
 
-Jesper made his way to the nearest town. When the townsfolk saw him they screamed in terror and chased him out. He ran into the country side and hid in the woods. Cursing the fate that had been bestowed upon him. It wasn't long before he became depressed and recluse. Would he never know love or kindness again? The seasons came and went, years passed as he meditated.
+Jesper made his way to the nearest town. When the townsfolk saw him they screamed in terror and chased him out. He ran into the country side and hid in the woods. Cursing the fate that had been bestowed upon him. It wasn't long before he became depressed and recluse. Would he never know love or kindness again? Seasons came and went, years passed as he meditated.
 
-Over time he began to notice little things that he had never noticed before. A spider spinning a web. The sun rising as if to gift the world a new day. The cool mountain air blowing through fields of spring flowers. It was all beautiful. Jesper had been too caught up with his own ambitions and never taken the time to appreciate such simple things.
+Over time he began to notice little things that he had never noticed before. A spider spinning a web. The sun rising as if to gift the world a new day. The cool mountain air blowing through fields of spring flowers. It was all beautiful. In life, Jesper had been too caught up with his own ambitions and never took the time to appreciate such simple things.
 
 
 ## An Act of Kindness
 
 One day a gnome by the name of [Eli Blackwell](/characters/eli-blackwell) came across Jesper's path.
 
-"Oh, hey there! Sir, do you happen to know how much farther Daggerford is? I am making my way to Waterdeep. I got accepted into the 'School of Medicine'!". The young gnome said with a beaming smile, as he flashes his acceptance letter.
+"Oh, hey there! Sir, do you happen to know how much farther Daggerford is? I am making my way to Waterdeep. I got accepted into the [Waterdeep School of Medicine](TODO)!". The young gnome said with a beaming smile, as he flashes his acceptance letter.
 
-Jesper was taken aback. It had been so long since anyone had talked to him. This strange gnome didn't seem to mind his... lack of skin.
+Jesper was taken aback. It had been so long since anyone had talked to him. This strange gnome didn't seem to mind his lack of skin or freakish nature.
 
-TODO
+Knowing that the road ahead could be dangerous for the young gnome, Jesper offered to guide Eli to Waterdeep. "Bandits sometimes patrol the Trade way, little one. I offer you my service. I shall guide you to Waterdeep. The bandits tend to leave me alone. As you could presume from my particular physical appearance."
+
+
 
 
 
