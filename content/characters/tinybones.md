@@ -68,7 +68,7 @@ Jesper made his way to the nearest town. When the townsfolk saw him they screame
 Over time he began to notice little things that he had never noticed before. A spider spinning a web. The sun rising as if to gift the world a new day. The cool mountain air blowing through fields of spring flowers. It was all beautiful. In life, Jesper had been too caught up with his own ambitions and never took the time to appreciate such simple things.
 
 
-## An Act of Kindness
+## A Little Gnome
 
 One day a gnome by the name of [Eli Blackwell](/characters/eli-blackwell) came across Jesper's path.
 
@@ -78,7 +78,9 @@ Jesper was taken aback. It had been so long since anyone had talked to him. This
 
 Knowing that the road ahead could be dangerous for the young gnome, Jesper offered to guide [Eli](/characters/eli-blackwell) to Waterdeep. "Bandits sometimes patrol the Trade Way, little one. I offer you my service. I shall guide you to Waterdeep. As you could presume from my particular physical appearance the bandits tend to leave me alone."
 
+[Eli](/characters/eli-blackwell) smiles, "Sure! I would love the company."
 
+Jesper and [Eli](/characters/eli-blackwell) walked side by side to Waterdeep. Chatting the entire way.
 
 
 
