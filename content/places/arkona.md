@@ -14,7 +14,7 @@ worlds: ["Alarra"]
 
 # Arkona
 
-A small island nation in the ____ ocean. Legend states that in the Age of Birth, the great kraken Etali, was slain by the primordial titan Arkon. Over the next 1000 years, the body of Etali formed into the island chain.
+A small island nation in the ____ ocean. Legend states that in the Age of Birth, the great kraken Etali, was slain by the primordial titan [Arkon](/characters/arkon). Over the next 1000 years, the body of Etali formed into the island chain.
 
 
 

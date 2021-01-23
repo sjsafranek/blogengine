@@ -13,3 +13,9 @@ worlds: ["Alarra"]
 ---
 
 # Dhuros
+
+shadow guard
+
+the undead armies
+
+weather control
