@@ -19,7 +19,7 @@ Some would say he is fearless to a fault.
 He always sees the good in others and is willing to lend a helping hand to anyone in need.
 Overlook obvious solutions in favor of more complicated ones.
 
-Niv is often seen jotting down notes in his note book, concocting a strange new potion, or sipping on some fine Arconian ale. He is currently traveling with his fellow companions from the Galazaar's Adventurers Academy: Jack, Twang, Gorethrial, and Merial.
+Niv is often seen jotting down notes in his note book, concocting a strange new potion, or sipping on some fine Arkonian ale. He is currently traveling with his fellow companions from the Galazaar's Adventurers Academy: Jack, Twang, Gorethrial, and Merial.
 
 {{< column >}}
 
@@ -43,9 +43,9 @@ Niv is often seen jotting down notes in his note book, concocting a strange new 
 
 ## Early life
 
-Born and raised in Arkona, Niv was the son of two professors, Serje and Reshi Izzet, who taught at Arkona's University of History and Ancient Cultures. Niv was naturally gifted in school and quickly surpassed the rest of his cohort. He was accepted into the university at the early age of 16.
+Born and raised in Arkona, Niv was the son of two professors, Serje and Reshi Izzet, who taught at [Arkona's University of History and Ancient Cultures](/places/arkona). Niv was naturally gifted in school and quickly surpassed the rest of his cohort. He was accepted into the university at the early age of 16.
 
-Since his parents worked full time, he spent much of his early child hood with is grandfather, Alabaster Izzet. Alabaster was a well known inventor (hard of hearing and slightly senile) who created very few inventions that actually worked as intended. One of these inventions was the famous airship Helga the Great (aka Little Missy). Alabaster would take Niv “sailing” to neighboring kingdoms and cities.
+Since his parents worked full time, he spent much of his early child hood with is grandfather, [Alabaster Izzet](/characters/alabaster-izzet). Alabaster was a well known inventor (hard of hearing and slightly senile) who created very few inventions that actually worked as intended. One of these inventions was the famous airship Helga the Great (aka Little Missy). Alabaster would take Niv “sailing” to neighboring kingdoms and cities.
 
 {{< columns >}}
 

@@ -76,7 +76,8 @@ One day a gnome by the name of [Eli Blackwell](/characters/eli-blackwell) came a
 
 Jesper was taken aback. It had been so long since anyone had talked to him. This strange gnome didn't seem to mind his lack of skin or freakish nature.
 
-Knowing that the road ahead could be dangerous for the young gnome, Jesper offered to guide Eli to Waterdeep. "Bandits sometimes patrol the Trade way, little one. I offer you my service. I shall guide you to Waterdeep. The bandits tend to leave me alone. As you could presume from my particular physical appearance."
+Knowing that the road ahead could be dangerous for the young gnome, Jesper offered to guide [Eli](/characters/eli-blackwell) to Waterdeep. "Bandits sometimes patrol the Trade Way, little one. I offer you my service. I shall guide you to Waterdeep. As you could presume from my particular physical appearance the bandits tend to leave me alone."
+
 
 
 

@@ -85,7 +85,9 @@ While working as a coroner, Eli began to intensively study the link between life
 
 ## The Eternal Slumber
 
+After graduating at the top of his class, Eli opened up a small  
 Shop where Eli conducts business
+studies for the university
 
 
 ## Relationships

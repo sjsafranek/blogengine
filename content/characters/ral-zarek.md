@@ -63,4 +63,8 @@ Horn
 </div>
 
 {{< column >}}
+
+Shortly after learning [Emrakul](/characters/emrakul) had willed his parents to kill themselves, Ral broke free of [Emrakul's](/characters/emrakul) influence.
+
+
 {{< endcolumns >}}

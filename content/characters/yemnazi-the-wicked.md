@@ -14,7 +14,7 @@ worlds: []
 
 {{< columns >}}
 
-Yemnazi is an evil Efreeti from [Yaebet](/places/yaebet). She is rumored to offer travelers a single wish. Unbeknownst to them it comes with a cost, a piece of their soul. Beware if you ever come across her mysterious jet black lamp.
+Yemnazi is an evil Efreeti from [Yaebet](/places/yaebet). She is rumored to offer travelers a single wish. Unbeknownst to them it comes with a hefty cost; a piece of their soul. Beware if you ever come across her mysterious jet black lamp.
 
 {{< column >}}
 
