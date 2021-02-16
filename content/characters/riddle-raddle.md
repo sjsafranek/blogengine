@@ -14,7 +14,7 @@ worlds: ["Faerûn"]
 
 {{< columns >}}
 
-Riddle & Raddle have often been compared to a tornado, or tsunami of chaos. These two skeleton twins are well-intentioned but ill mannered.
+Riddle & Raddle have often been compared to a tornado, or tsunami of chaos. These two skeleton twins are well-intentioned but ill mannered. They are often seen wearing stolen terry cloth robes with a mess not far behind.
 
 {{< column >}}
 
