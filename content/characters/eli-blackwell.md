@@ -16,13 +16,9 @@ worlds: ["Faerûn"]
 
 Eli is a well dressed forest gnome with peppered grey and black hair.
 
-Enjoys tea.
+He is very polite but shy and nervous. Desires to help people less fortunate.
 
-Mannerisms polite by shy and nervous
-
-Desires to help people less fortunate.
-
-Often seen with his "friends" Leonard, Leopold, Riddle and Raddle
+Often seen with his "friends" [Leonard](/character/leonard), Leopold, [Riddle and Raddle](/character/riddle-raddle)
 
 {{< column >}}
 
@@ -69,7 +65,7 @@ When Eli, was of age, he was accepted into Waterdeep’s School of Medicine. Tho
 
 {{< columns >}}
 
-While working as a coroner, Eli began to intensively study the link between life and death and there entwined energies, viewing it at a means to truly understand life and how to preserve it. Most people tend to be put off by the fact he spends much of his time around the deceased, which leaves him feeling pretty lonely. One day, using the knowledge he had obtained through his studies, he worked up the courage and resurrected Leonard. Leonard is Eli's zombie bestie. Leonard helps Eli with autopsies and never leaves his side.
+While working as a coroner, Eli began to intensively study the link between life and death and there entwined energies, viewing it at a means to truly understand life and how to preserve it. Most people tend to be put off by the fact he spends much of his time around the deceased, which leaves him feeling pretty lonely. One day, using the knowledge he had obtained through his studies, he worked up the courage and resurrected Leonard. Leonard is Eli's zombie bestie. [Leonard](characters/leonard) helps Eli with autopsies and never leaves his side.
 
 {{< column >}}
 
@@ -87,9 +83,11 @@ While working as a coroner, Eli began to intensively study the link between life
 
 After graduating at the top of his class, Eli opened up a small  
 Shop where Eli conducts business
-studies for the university
+Studies for the university
 
 
 ## Relationships
 
  - [Tinybones](/characters/tinybones)
+ - [Leonard](/characters/leonard)
+ - [Riddle & Raddle](/character/riddle-raddle)
