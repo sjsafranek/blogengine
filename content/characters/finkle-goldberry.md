@@ -33,3 +33,8 @@ One of the most renowned tinker gnomes
 </div>
 
 {{< endcolumns >}}
+
+## Relationships
+
+ - [Niv Izzet](/characters/niv-izzet)
+ - [Camay Underbow](/characters/camay-underbow)

@@ -58,14 +58,14 @@ Since his parents worked full time, he spent much of his early child hood with i
 
 {{< column >}}
 
-The early years of Niv's professional career were spent working for the university as an archaeologist. During this time he discovered and studied several ancient tombs and temples across Arkona. During this time he became quite familiar with alchemy and different types of magical artifacts. He eventually earned a professorship at the University, teaching students about Magic Artifacts, Mechanical Engineering, and Alchemy. After two years he became disinterested with his teaching position, finding it to be rather dull. Niv retired from teaching and set out for a life of adventure!
+The early years of Niv's professional career were spent working for the university as an archaeologist. During this time he discovered and studied several ancient tombs and temples across [Arkona](places/arkona). During this time he became quite familiar with alchemy and different types of magical artifacts. He eventually earned a professorship at the University, teaching students about Magic Artifacts, Mechanical Engineering, and Alchemy. After two years he became disinterested with his teaching position, finding it to be rather dull. Niv retired from teaching and set out for a life of adventure!
 
 {{< endcolumns >}}
 
 
 ### Tezzeret's Tomb
 
-During his time at the university Niv helped uncover an ancient tomb that once belonged Tezzeret the Inventor. Legend states that [1000 years] ago Tezzeret had assembled an army of constructs and sought out to conquer the [realm].  Before Tezzeret could complete his quest he was poisoned in during an assassination attempt. Although he managed to survive his body was left withered and destroyed as the poison ate through his bones. Tezzeret went into hiding, and it is rumored that he spent the rest of his days trying to restore his body. While excavating tomb, Niv found an ancient text left behind from Tezzeret himself. Niv has tried many times to read/understand the text yet to no avail. As far as he can tell it is a design to a powerful device must not fall into the wrong hands. Niv carries this text in one of his many pockets…
+During his time at the university Niv helped uncover an ancient tomb that once belonged [Tezzeret the Inventor](character/tezzeret-the-inventor). While excavating tomb, Niv found an ancient text left behind from [Tezzeret](character/tezzeret-the-inventor) himself. Niv has tried many times to read/understand the text yet to no avail. As far as he can tell it is a design to a powerful device must not fall into the wrong hands. Niv carries this text in one of his many pockets…
 
 
 ## B-Team
@@ -95,7 +95,7 @@ During the adventures of the Galazaar Laughing Curse, Niv met [Camay Underbow](/
 
 ## Izzet's Worldly Elixirs
 
-After a full life of adventuring Niv and [Camay](/characters/camay-underbow) settled down and founded Izzet's Worldly Elixirs which supplies much of Arkona, Amarton, and Zephra with potions.
+After a full life of adventuring Niv and [Camay](/characters/camay-underbow) settled down and founded Izzet's Worldly Elixirs which supplies much of [Arkona](/places/arkona), [Amarton](/places/amarton), and Zephra with potions.
 
 
 ## Pinchers Aleworks
@@ -110,6 +110,7 @@ After a full life of adventuring Niv and [Camay](/characters/camay-underbow) set
  - [Merial](/characters/merial)
  - [Camay Underbow](/characters/camay-underbow)
  - [Alabaster Izzet](/characters/alabaster-izzet)
+ - [Finkle Goldberry](/characters/finkle_goldberry)
 
 
 ## Books
