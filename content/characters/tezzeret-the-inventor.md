@@ -26,10 +26,10 @@ A millennium ago, Tezzeret had assembled an army of constructs and sought out to
 
 |                   |                       |
 | ----------------- | ---------------------:|
-| <b>Race</b>       | Human	        |
+| <b>Race</b>       | Human	                |
 | <b>Class</b>      | Artificer (Armorer) / Wizard (Necromancer) |
 | <b>Background</b> | Sage                  |
-| <b>Alignment</b>  | Evil          |
+| <b>Alignment</b>  | Evil                  |
 
 </div>
 
@@ -37,3 +37,21 @@ A millennium ago, Tezzeret had assembled an army of constructs and sought out to
 
 
 ## Early life
+
+Tezzeret grew up as an orphan in Shadowmoor, located at the heart of the Kingdom of [Dhuros](/places/dhuros).
+
+
+
+From an early age he was regarded as highly intelligent . The Shadow Guard accepted him into their ranks.
+
+
+Tezzeret learned   
+
+
+
+ artificer/tinkerer by trade. Later in life dips into necromancy. Arrogant, Hubris. Power hungry. Wants to control, perfect and have dominion upon the natural world (industrialization personified).
+
+Uses technology to facilitate lichdom/vampirism by stealing the life force from others to heal himself. Suffered major bodily wounds through an assassination attempt involving acid. Replaced parts of his body with clockwork/mechanical parts powered by arcane magic.
+
+
+aetherborn
