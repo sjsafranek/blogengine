@@ -98,7 +98,16 @@ During the adventures of the Galazaar Laughing Curse, Niv met [Camay Underbow](/
 After a full life of adventuring Niv and [Camay](/characters/camay-underbow) settled down and founded Izzet's Worldly Elixirs which supplies much of [Arkona](/places/arkona), [Amarton](/places/amarton), and Zephra with potions.
 
 
-## Pinchers Aleworks
+
+
+
+<div class="description-table">
+	<img src="/images/NivIzzet_heroforge.png" class="portrait">
+	<div style="text-align:center;">
+		<i>Niv Izzet</i>
+	</div>
+</div>
+
 
 
 
