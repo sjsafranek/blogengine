@@ -60,6 +60,13 @@ Since his parents worked full time, he spent much of his early child hood with i
 
 The early years of Niv's professional career were spent working for the university as an archaeologist. During this time he discovered and studied several ancient tombs and temples across [Arkona](places/arkona). During this time he became quite familiar with alchemy and different types of magical artifacts.
 
+He eventually earned a professorship at the University, teaching students about Magic Artifacts, Mechanical Engineering, and Alchemy. After two years he became disinterested with his teaching position, finding it to be rather dull. Niv retired from teaching and set out for a life of adventure!
+
+{{< endcolumns >}}
+
+
+### Pinchers
+
 Being involved with so many projects, Niv came to realize he needed a few extra hands. These extra hands would of course need to double as tools from time to time. Growing up on Arcona, and island nation, he knew of the perfect specimen. Using the ghost crab has his inspiration, he created a clockwork homunculus/familiar named "Pinchers". Pinchers happily spends his time riding along on Niv's shoulder, helping to pick locks and tinker on small clockwork devices.
 
 <div class="description-table">
@@ -68,12 +75,6 @@ Being involved with so many projects, Niv came to realize he needed a few extra 
 		<i>Pinchers!</i>
 	</div>
 </div>
-
-He eventually earned a professorship at the University, teaching students about Magic Artifacts, Mechanical Engineering, and Alchemy. After two years he became disinterested with his teaching position, finding it to be rather dull. Niv retired from teaching and set out for a life of adventure!
-
-
-
-{{< endcolumns >}}
 
 
 ### Tezzeret's Tomb
