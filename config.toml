@@ -29,30 +29,6 @@ canonifyurls = true
     custom_css = ["css/style.css"]
     custom_js = ["js/ui.js"]
 
-
-# [Params.staticman]
-#   api = "http://207.154.225.107:3333/v2/connect/sjsafranek/staticman_blog_comments/master/comments"
-# [Params.staticman.recaptcha]
-#   sitekey = "6LeGeTgUAAAAAAqVrfTwox1kJQFdWl-mLzKasV0v"
-#   secret = "hsGjWtWHR4HK4pT7cUsWTArJdZDxxE2pkdg/ArwCguqYQrhuubjj3RS9C5qa8xu4cx/Y9EwHwAMEeXPCZbLR9eW1K9LshissvNcYFfC/b8KKb4deH4V1+oqJEk/JcoK6jp6Rr2nZV4rjDP9M7nunC3WR5UGwMIYb8kKhur9pAic="
-
-
-#  hideAuthor = true
-#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
-
-#[[Params.bigimg]]
-#  src = "img/triangle.jpg"
-#  desc = "Triangle"
-#[[Params.bigimg]]
-#  src = "img/sphere.jpg"
-#  desc = "Sphere"
-#  # position: see values of CSS background-position.
-#  position = "center top"
-#[[Params.bigimg]]
-#  src = "img/hexagon.jpg"
-#  desc = "Hexagon"
-
-
 [Author]
     name = "Stefan Safranek"
     email = "sjsafranek@gmail.com"
@@ -82,22 +58,20 @@ canonifyurls = true
     url = "campaigns"
     weight = 4
 
-[[menu.main]]
-    name = "Worlds"
-    url = "worlds"
-    weight = 5
+#[[menu.main]]
+#    name = "Worlds"
+#    url = "worlds"
+#    weight = 5
 
 [[menu.main]]
     name = "Tags"
     url = "tags"
     weight = 6
 
-
 # [[menu.main]]
 #     name = "About"
 #     url = "pages/about"
 #     weight = 4
-
 
 [[menu.main]]
     name = "Contact"

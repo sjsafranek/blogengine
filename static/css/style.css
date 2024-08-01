@@ -1,4 +1,27 @@
 
+/* Force into light mode */
+:root {
+  color-scheme: only light !important;
+}
+
+
+/* Firefox */
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: light;
+    }
+}
+
+/* Chrome */
+@media (forced-colors: active) {
+    :root {
+        color-scheme: light;
+    }
+}
+
+
+
+
 /*img.avatar-img {*/
     /*background-color:purple;*/
 /*}*/
