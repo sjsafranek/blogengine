@@ -48,9 +48,14 @@ canonifyurls = true
     url = "characters"
     weight = 2
 
+#[[menu.main]]
+#    name = "Parties"
+#    url = "parties"
+#    weight = 3
+
 [[menu.main]]
-    name = "Parties"
-    url = "parties"
+    name = "Places"
+    url = "places"
     weight = 3
 
 [[menu.main]]
