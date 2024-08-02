@@ -36,7 +36,7 @@ In the main courtyard, leading up to the castle entrance are 5 statues magically
 
 5. A thin female elf with boyish features, riding a reindeer with a long sword drawn toward the heavens. The front feet of the reindeer rise off the ground as if the steed is about to take flight. Stands the tallest at an impressive 5 ft. At the bottom a placard reads the following:
 
-	_"Charles de Valois, first noble of Evermeet. Eldest lord of Nailo de Valois and Drusilia de Orleans. First General of Enforcement. Duke of Valleylorn. Second lord of Orleans. Champion of the Army. Battalion leader of the gnome wars. Scholar of mediocrity..."_
+	_"**Charles de Valois**, first noble of Evermeet. Eldest lord of Nailo de Valois and Drusilia de Orleans. First General of Enforcement. Duke of Valleylorn. Second lord of Orleans. Champion of the Army. Battalion leader of the gnome wars. Scholar of mediocrity..."_
 
 
 ## Knights of Manchego
