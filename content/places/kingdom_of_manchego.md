@@ -18,7 +18,7 @@ A small village in the middle of a large grassy field. A 4 ft wooden palisade wa
 
 At the kingdoms center, lies a courtyard surrounded by an 8 ft stone wall and ~20 ft tall castle. Both are constructed of bluish grey river stone. Legend says that these were a gift from the **Lake Deity** (Eldath).
 
-The kingdoms inhabitants consist of ~500 mousefolk and one large mutant harengon zombie named *The Foo*. **King Zeepyjeep Grayfur VIII** along with a high court consisting of 4 advisors rules over the kingdom. They are known for being kind, peaceful and just.
+The kingdoms inhabitants consist of ~500 mousefolk and one large mutant harengon zombie named **The Foo**. **King Zeepyjeep Grayfur VIII** along with a high court consisting of 4 advisors rule over the kingdom. They are known for being kind, peaceful and just.
 
 Unlike other kingdoms the citizens of Manchego don't quite understand the use of gold and silver. Instead they deal in berries, grain, and most important of all... cheese.
 
