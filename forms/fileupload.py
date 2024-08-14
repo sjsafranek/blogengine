@@ -8,8 +8,6 @@ from flask import render_template
 from flask import Blueprint
 from werkzeug.utils import secure_filename
 
-import conf
-
 
 DEFAULT_UPLOAD_FOLDER = 'uploads'
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
@@ -23,10 +21,9 @@ def allowed_file(filename):
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
-def new(upload_folder):
+def new(options={}):
 
-    if not upload_folder:
-        upload_folder = DEFAULT_UPLOAD_FOLDER
+    upload_folder = options.get("upload_folder", DEFAULT_UPLOAD_FOLDER)
     
     blogpost = Blueprint('fileupload', __name__)
 

@@ -1,12 +1,19 @@
 {
-	"session_type": "filesystem",
 	"secret_key": "skeleton",
-	"applications": {
-		"fileupload": {
-			"folder": "uploads"
+	"session_type": "filesystem",
+	"forms": {
+		"/create/post": {
+			"name": "fileupload",
+			"options": {
+				"upload_folder": "uploads",
+				"allowed_extensions": ["txt", "pdf", "png", "jpg", "jpeg", "gif"]
+			}
 		},
-		"blogpost": {
-			"folder": "blog"
+		"/upload/file": {
+			"name": "blogpost",
+			"options": {
+				"upload_folder": "blog"
+			}
 		}
 	}
 }

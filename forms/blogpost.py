@@ -8,8 +8,6 @@ from flask import url_for
 from flask import render_template
 from flask import Blueprint
 
-import conf
-
 
 DEFAULT_UPLOAD_FOLDER = 'posts'
 
@@ -35,10 +33,8 @@ worlds: []
 '''
 
 
-def new(upload_folder):
-    
-    if not upload_folder:
-        upload_folder = DEFAULT_UPLOAD_FOLDER
+def new(options={}):
+    upload_folder = options.get("upload_folder", DEFAULT_UPLOAD_FOLDER)
 
     blogpost = Blueprint('blogpost', __name__)
 

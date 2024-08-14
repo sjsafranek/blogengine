@@ -1,14 +1,37 @@
+import json
 from flask import Flask
 
-import conf
 import blogpost
 import fileupload
 
 
-app = Flask(__name__)
-app.secret_key = conf.SECRET_KEY
-app.config['SESSION_TYPE'] =  conf.SESSION_TYPE
+DEFAULT_SECRET_KEY = "skeleton"
+DEFAULT_SESSION_TYPE = "filesystem"
 
-app.register_blueprint(blogpost.new(conf.BLOG_FOLDER), url_prefix="/create/post")
-app.register_blueprint(fileupload.new(conf.FILE_FOLDER), url_prefix="/upload/file")
+
+config_file = 'config.json'
+config = {}
+with open(config_file) as fh:
+	config = json.load(fh)
+print(config)
+
+
+app = Flask(__name__)
+app.secret_key = config.get("secret_key", DEFAULT_SECRET_KEY)
+app.config['SESSION_TYPE'] = config.get("session_type", DEFAULT_SESSION_TYPE)
+
+
+
+forms = config.get("forms", {})
+for endpoint in forms:
+	form = forms[endpoint]
+	options = form.get("options", {})
+
+	blueprint = None
+	if "blogpost" == form["name"]:
+		blueprint = blogpost.new(options)
+	elif "fileupload" == form["name"]:
+		blueprint = fileupload.new(options)
+
+	app.register_blueprint(blueprint, url_prefix=endpoint)
 
