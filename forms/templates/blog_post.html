@@ -1,0 +1,84 @@
+{% set title = "New Post" %}
+
+{% extends "page.html" %}
+
+
+{% block head %}
+    {{ super() }}
+    
+    <!-- SimpleMDE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+{% endblock %}
+
+
+{% block content %}
+
+        <div class="row">
+            {% include "flash_container.html" %}
+        </div>
+        
+        <div class="row">
+
+            <form method=post enctype=multipart/form-data>
+
+                <div class="row">
+
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="" class="form-label">Author</label>
+                            <input class="form-control form-control-sm" type=text name=author required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Title</label>
+                            <input class="form-control form-control-sm" type=text name=title required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Subtitle</label>
+                            <input class="form-control form-control-sm" type=text name=subtitle>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Image</label>
+                            <input class="form-control form-control-sm" type=text name=image>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Tags</label>
+                            <select class="form-control form-control-sm" multiple name=tags required>
+                                <option value="character">Character</option>
+                                <option value="deity">Deity</option>
+                                <option value="place">Place</option>
+                                <option value="player">Player</option>
+                                <option value="non-player">Non Player</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="" class="form-label">Content</label>
+                            <textarea id="content" class="form-control form-control-sm" name="content" rows="5" required></textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mb-3 clearfix">
+                    <input class="btn btn-primary pull-right" type=submit value=Create>
+                </div>
+
+            </form>
+
+        </div>
+
+{% endblock %}
+
+
+{% block scripts %}
+
+    <script>
+        
+        var simplemde = new SimpleMDE({ element: document.getElementById("content") });
+
+    </script>
+
+{% endblock %}
