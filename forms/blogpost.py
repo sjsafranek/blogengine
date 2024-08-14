@@ -6,6 +6,7 @@ from flask import request
 from flask import redirect
 from flask import url_for
 from flask import render_template
+from flask import Blueprint
 
 import conf
 
@@ -34,17 +35,14 @@ worlds: []
 '''
 
 
-def create_app(upload_folder):
-
+def new(upload_folder):
+    
     if not upload_folder:
         upload_folder = DEFAULT_UPLOAD_FOLDER
 
-    app = Flask(__name__)
-    app.secret_key = conf.SECRET_KEY
-    app.config['SESSION_TYPE'] =  conf.SESSION_TYPE
-    app.config['UPLOAD_FOLDER'] = upload_folder
+    blogpost = Blueprint('blogpost', __name__)
 
-    @app.route('/', methods=['GET', 'POST'])
+    @blogpost.route('/', methods=['GET', 'POST'])
     def handler():
         if request.method == 'POST':
             print(request)
@@ -53,4 +51,4 @@ def create_app(upload_folder):
             print(post)
         return render_template("blog_post.html")
 
-    return app
+    return blogpost

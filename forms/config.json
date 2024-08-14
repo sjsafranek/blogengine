@@ -1,0 +1,12 @@
+{
+	"session_type": "filesystem",
+	"secret_key": "skeleton",
+	"applications": {
+		"fileupload": {
+			"folder": "uploads"
+		},
+		"blogpost": {
+			"folder": "blog"
+		}
+	}
+}
