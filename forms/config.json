@@ -3,16 +3,61 @@
 	"session_type": "filesystem",
 	"forms": {
 		"/create/post": {
-			"name": "fileupload",
+			"type": "fileupload",
 			"options": {
 				"upload_folder": "uploads",
 				"allowed_extensions": ["txt", "pdf", "png", "jpg", "jpeg", "gif"]
 			}
 		},
 		"/upload/file": {
-			"name": "blogpost",
+			"type": "blogpost",
 			"options": {
 				"upload_folder": "blog"
+			}
+		},
+		"/test": {
+			"type": "dynamic",
+			"options": {
+				"title": "STEFAN WAS HERE",
+				"submit": {
+					"text": "Submit", 
+					"class": "btn-primary"
+				},
+				"fields": [
+					{
+						"name": "is_test",
+						"type": "checkbox",
+						"label": "Is this a test?",
+						"required": true
+					},
+					{
+						"name": "firstname",
+						"type": "text",
+						"label": "First Name"
+					},
+					{
+						"name": "color",
+						"type": "select",
+						"label": "Pick one color",
+						"options": [
+							"red", "blue", "green"
+						]
+					},
+					{
+						"name": "colors",
+						"type": "selectmultiple",
+						"label": "Pick many colors",
+						"options": [
+							"orange", "pink", "purple"
+						]
+					},
+					{
+						"name": "text",
+						"type": "textarea",
+						"label": "Write something down...",
+						"markdown": true
+					}
+				]
 			}
 		}
 	}

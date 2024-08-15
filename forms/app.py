@@ -3,6 +3,7 @@ from flask import Flask
 
 import blogpost
 import fileupload
+import dynamic
 
 
 DEFAULT_SECRET_KEY = "skeleton"
@@ -28,10 +29,12 @@ for endpoint in forms:
 	options = form.get("options", {})
 
 	blueprint = None
-	if "blogpost" == form["name"]:
+	if "blogpost" == form["type"]:
 		blueprint = blogpost.new(options)
-	elif "fileupload" == form["name"]:
+	elif "fileupload" == form["type"]:
 		blueprint = fileupload.new(options)
+	elif "dynamic" == form["type"]:
+		blueprint = dynamic.new(options)
 
 	app.register_blueprint(blueprint, url_prefix=endpoint)
 
