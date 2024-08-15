@@ -3,14 +3,14 @@
 	"session_type": "filesystem",
 	"forms": {
 		"/create/post": {
-			"type": "fileupload",
+			"type": "blogpost",
 			"options": {
 				"upload_folder": "uploads",
 				"allowed_extensions": ["txt", "pdf", "png", "jpg", "jpeg", "gif"]
 			}
 		},
 		"/upload/file": {
-			"type": "blogpost",
+			"type": "fileupload",
 			"options": {
 				"upload_folder": "blog"
 			}
