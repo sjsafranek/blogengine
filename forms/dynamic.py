@@ -10,9 +10,6 @@ from werkzeug.utils import secure_filename
 
 
 def new(options={}):
-
-    print(options)
-    print(options.get("submit"))
     
     blueprint = Blueprint('dynamic', __name__)
 

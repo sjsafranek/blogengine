@@ -5,14 +5,14 @@
 		"/create/post": {
 			"type": "blogpost",
 			"options": {
-				"upload_folder": "uploads",
-				"allowed_extensions": ["txt", "pdf", "png", "jpg", "jpeg", "gif"]
+				"upload_folder": "blog"
 			}
 		},
 		"/upload/file": {
 			"type": "fileupload",
 			"options": {
-				"upload_folder": "blog"
+				"upload_folder": "uploads",
+				"allowed_extensions": ["txt", "pdf", "png", "jpg", "jpeg", "gif"]
 			}
 		},
 		"/test": {
